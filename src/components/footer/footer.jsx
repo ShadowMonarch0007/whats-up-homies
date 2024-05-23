@@ -8,22 +8,24 @@ import { Vortex } from "../ui/vortex";
 
 export default async function Footer() {
     return (
-        <div className="p-5 lg:p-10 bg-black">
-            
-            <div className="text-[#e0e0e0] flex text-center align-middle justify-center pb-10">Copyright © 2024 - All rights reserved</div>
-            <div className="flex flex-wrap lg:flex-nowrap justify-evenly">
-                <div className="logo flex items-center justify-center">
-                    <BackgroundGradient><Image className="rounded-3xl p-0.5" src={pfp} height={250} width={250} /></BackgroundGradient>
-                    
+        <div className="overflow-hidden p-10 lg:p-0 bg-black">
+            <Vortex>
+                <div className="flex flex-col lg:flex-row items-center justify-evenly p-5 lg:p-16">
+                    {/* <div className="logo flex items-center justify-center">
+                        <BackgroundGradient><Image className="rounded-3xl p-0.5" src={pfp} height={200} width={200} /></BackgroundGradient>
+
+                    </div> */}
+                    {/* <div className="w-[380px] flex flex-col items-start justify-center backdrop-blur-lg rounded-xl shadow-fm shadow-[#e0e0e0]/50"> */}
+                    <div className="w-[380px] flex flex-col items-start justify-center rounded-xl">
+                        <FollowMe />
+                    </div>
+                    {/* <div className="w-[380px] flex flex-col items-start justify-center backdrop-blur-lg rounded-xl shadow-fm shadow-[#e0e0e0]/50"> */}
+                    <div className="w-[380px] flex flex-col items-start justify-center rounded-xl">
+                        <EmailSnppet />
+                    </div>
                 </div>
-                <div className="flex items-center justify-center w-1/3 text-[#e0e0e0] font-medium text-xl leading-7">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, neque eius facilis vel dolorem cupiditate maxime corporis. Ad alias modi iste? Consequatur numquam quibusdam pariatur.
-                </div>
-                <div className="flex flex-col items-start justify-center">
-                    <FollowMe />
-                    <EmailSnppet />
-                </div>
-            </div>
+                <div className="text-[#e0e0e0] flex text-center align-middle justify-center py-10">Copyright © 2024 - All rights reserved</div>
+            </Vortex>
         </div>
     );
 }
