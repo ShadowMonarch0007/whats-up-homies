@@ -9,7 +9,7 @@ import { Vortex } from "../ui/vortex";
 
 export default async function Footer() {
     return (
-        <div className="overflow-hidden p-10 lg:p-0">
+        <div className="overflow-hidden">
             {/* <Vortex> */}
             <WavyBackground>
                 <div className="flex flex-col lg:flex-row items-center justify-evenly p-5 lg:p-16">
