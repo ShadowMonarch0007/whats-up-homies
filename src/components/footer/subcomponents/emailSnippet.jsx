@@ -5,7 +5,7 @@ import Gmail from '@/components/footer/svg/Gmail_icon.svg'
 export default async function EmailSnppet() {
     return (
         <div className="p-5">
-            <h1 className="text-white font-semibold text-4xl font-sans mb-5">Mail</h1>
+            <h1 className="text-[#202020] dark:text-white font-bold text-4xl font-sans mb-5">Mail</h1>
             <div className="flex justify-evenly gap-2 group">
                 <div className="mail-icon backdrop:blur-lg group-hover:bg-[#e0e0e0] bg-[#e0e0e0] md:bg-[#333333]/70 lg:bg-[#333333]/70 rounded-xl h-11 w-11 py-2 px-[5px]">
                     <a href="https://mail.google.com/mail/u/4/#inbox?compose=CllgCJfnbWjFqccwvCtQDQkztVNGDdTpkldNgpnZXGNdZtKJkPWMDvQQTCLQVrSbSSllfrLbqcL"><svg xmlns="http://www.w3.org/2000/svg" viewBox="52 42 88 66">
