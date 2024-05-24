@@ -11,7 +11,7 @@ export default async function Footer() {
     return (
         <div className="overflow-hidden">
             {/* <Vortex> */}
-            <WavyBackground >
+            <WavyBackground>
                 <div className="flex flex-col gap-5 lg:gap-10">
                     <div className="flex flex-col lg:flex-row items-center justify-evenly px-5 lg:px-16">
                         {/* <div className="logo flex items-center justify-center">
