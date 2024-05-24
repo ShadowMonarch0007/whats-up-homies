@@ -1,7 +1,8 @@
-"use client"
+"use client";
 import { cn } from "@/lib/utils";
 import React, { useEffect, useRef, useState } from "react";
 import { createNoise3D } from "simplex-noise";
+import { useTheme } from "next-themes";
 
 export const WavyBackground = ({
   children,
@@ -18,6 +19,7 @@ export const WavyBackground = ({
   const noise = createNoise3D();
   let w, h, nt, i, x, ctx, canvas;
   const canvasRef = useRef(null);
+  const { theme } = useTheme();  // useTheme hook to get the current theme
   
   const getSpeed = () => {
     switch (speed) {
@@ -52,7 +54,7 @@ export const WavyBackground = ({
     "#e879f9",
     "#22d3ee",
   ];
-  
+
   const drawWave = (n) => {
     nt += getSpeed();
     for (i = 0; i < n; i++) {
@@ -70,7 +72,8 @@ export const WavyBackground = ({
 
   let animationId;
   const render = () => {
-    ctx.fillStyle = backgroundFill || "black";
+    const themeBackground = theme === "dark" ? "#000" : "#fff";
+    ctx.fillStyle = backgroundFill || themeBackground;
     ctx.globalAlpha = waveOpacity || 0.5;
     ctx.fillRect(0, 0, w, h);
     drawWave(5);
@@ -87,10 +90,11 @@ export const WavyBackground = ({
   const [isSafari, setIsSafari] = useState(false);
   useEffect(() => {
     // Support for Safari browser
+
     setIsSafari(
       typeof window !== "undefined" &&
-      navigator.userAgent.includes("Safari") &&
-      !navigator.userAgent.includes("Chrome")
+        navigator.userAgent.includes("Safari") &&
+        !navigator.userAgent.includes("Chrome")
     );
   }, []);
 
@@ -102,7 +106,7 @@ export const WavyBackground = ({
       )}
     >
       <canvas
-        className=" absolute h-96 lg:h-72 w-full z-0 flex items-center justify-center"
+        className="absolute h-96 lg:h-72 w-full z-0 flex items-center justify-center"
         ref={canvasRef}
         id="canvas"
         style={{
