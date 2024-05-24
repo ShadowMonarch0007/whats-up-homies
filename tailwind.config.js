@@ -55,6 +55,9 @@ module.exports = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      boxShadow:{
+        'hbt':'0 0 2px 2px'
+      },
       boxShadow: {
         'fm': '0 0 5px 5px',
       },
