@@ -1,5 +1,4 @@
 "use client"
-"use client";
 import { cn } from "@/lib/utils";
 import React, { useEffect, useRef, useState } from "react";
 import { createNoise3D } from "simplex-noise";
@@ -103,7 +102,7 @@ export const WavyBackground = ({
       )}
     >
       <canvas
-        className="absolute h-1/2 w-full z-0 flex items-center justify-center"
+        className="absolute h-full w-full z-0 flex items-center justify-center"
         ref={canvasRef}
         id="canvas"
         style={{

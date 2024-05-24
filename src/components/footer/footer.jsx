@@ -9,7 +9,7 @@ import { Vortex } from "../ui/vortex";
 
 export default async function Footer() {
     return (
-        <div className="overflow-hidden p-10 lg:p-0 bg-black">
+        <div className="overflow-hidden p-10 lg:p-0">
             {/* <Vortex> */}
             <WavyBackground>
                 <div className="flex flex-col lg:flex-row items-center justify-evenly p-5 lg:p-16">
@@ -26,7 +26,7 @@ export default async function Footer() {
                         <EmailSnppet />
                     </div>
                 </div>
-                <div className="text-[#e0e0e0] flex text-center align-middle justify-center py-10">Copyright © 2024 - All rights reserved</div>
+                <div className="text-[#e0e0e0] flex text-center align-middle justify-center">Copyright © 2024 - All rights reserved</div>
             </WavyBackground>
             {/* </Vortex> */}
         </div>
