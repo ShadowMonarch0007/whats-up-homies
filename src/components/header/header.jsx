@@ -9,7 +9,7 @@ import Navbar from "../navbar/navbar";
 export default async function Headers() {
     return (
         <div className="flex items-center justify-between pt-5 pb-2.5 px-5 lg:px-10">
-            <div className="w-[30%] lg:hidden md:hidden xl:hidden 2xl:hidden">
+            <div className="w-[30.5%] lg:hidden md:hidden xl:hidden 2xl:hidden">
 
             </div>
             <Link href="./">
