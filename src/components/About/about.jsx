@@ -50,7 +50,8 @@ export default async function Abouts(){
       ];
     return(
         <div>
-            <div className="mb-10 flex items-center justify-center">
+            <div className="absolute h-[122%] pointer-events-none top-20 inset-0 flex items-center justify-center bg-white dark:bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+            <div className="mt-20 mb-10 flex items-center justify-center">
                 <TypewriterEffectSmooth words={Education}/>
             </div>
             <div className="flex flex-wrap lg:flex-nowrap gap-20 items-center justify-center">

@@ -22,7 +22,9 @@ export default function RootLayout({ children }) {
           <header>
             <Headers/>
           </header>
-          <main  className="mb-6 lg:mb-10">{children}</main>
+          <main  className="mb-6 lg:mb-10 dark:bg-black bg-white  dark:bg-grid-white/[0.1] bg-grid-black/[0.1]">
+            {children}
+            </main>
           <Footer/>
         </Providers>
       </body>
