@@ -9,12 +9,15 @@ import Navbar from "../navbar/navbar";
 export default async function Headers() {
     return (
         <div className="flex items-center justify-between pt-5 pb-2.5 px-5 lg:px-10">
+            <div className="w-[30%] lg:hidden md:hidden xl:hidden 2xl:hidden">
+
+            </div>
             <Link href="./">
-                <div className="hidden lg:block md:block xl:block 2xl:block">
+                <div>
                     <Image className="dark:bg-white rounded-lg" src={logo} height={48} width={48} />
                 </div>
             </Link>
-            <div><Navbar/></div>
+            <div><Navbar /></div>
             <div>
                 <ThemeButton />
             </div>

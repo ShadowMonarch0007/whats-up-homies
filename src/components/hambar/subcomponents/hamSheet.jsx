@@ -22,7 +22,7 @@ export default async function HamSheet() {
                 </SheetTrigger>
                 <SheetContent>
                     <SheetHeader>
-                        <SheetTitle><Image className="-translate-y-2.5 dark:bg-white" src={Logo} height={24} width={24} /></SheetTitle>
+                        <SheetTitle><Image className="-translate-y-2.5 dark:bg-white" src={Logo} height={48} width={48} /></SheetTitle>
                         <SheetDescription className="pt-5 flex flex-col gap-4">
                             <Link href="./"><Button className="w-[90%] text-lg flex dark:text-white text-[#202020] justify-between bg-gradient-to-r from-[#303030]/50 to-[#ffffff]/50 dark:from-[#ffffff]/50 dark:to-[#303030]/50 backdrop-blur-lg bg-clip-padding backdrop-filter " variant="outline ">Home <ChevronDown /> </Button></Link>
                             <Link href="./About"><Button className=" w-[90%] text-lg flex dark:text-white text-[#202020] justify-between bg-gradient-to-r from-[#303030]/50 to-[#ffffff]/50 dark:from-[#ffffff]/50 dark:to-[#303030]/50 backdrop-blur-lg bg-clip-padding backdrop-filter " variant="outline ">About <ChevronDown /> </Button></Link>
