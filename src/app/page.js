@@ -3,8 +3,8 @@ import Hambar from "@/components/hambar/hambar";
 
 export default function Home() {
   return (
-    <div>
-      <Hambar text={"Home"}/>
+    <div className=" lg:hidden md:hidden xl:hidden 2xl:hidden">
+      <div><Hambar/></div>
     </div>
   );
 }
