@@ -53,7 +53,7 @@ export default async function Abouts(){
             <div className="mt-20 mb-10 flex items-center justify-center">
                 <TypewriterEffectSmooth words={Education}/>
             </div>
-            <div className="flex flex-wrap lg:flex-nowrap gap-20 items-center justify-center">
+            <div className="flex flex-wrap lg:flex-nowrap xl:flex-nowrap 2xl:flex-nowrap gap-20 items-center justify-center">
                 <AnimatedPinDemo title={"stxavierspatna.in"} nlink={"https://www.stxavierspatna.in/"} name={"St. Xavier's High SChool"} description={"I have done my matriculation in I.C.S.E Board."} Logo={sxp}/>
                 <AnimatedPinDemo title={"baldwinsociety.in/patna"} nlink={"https://www.baldwinsociety.in/patna"} name={"Baldwin Academy"} description={"I have done my intermediate in C.B.S.E Board."} Logo={ba}/>
                 <AnimatedPinDemo title={"nitrkl.ac.in"} nlink={"https://www.nitrkl.ac.in/"} name={"NIT Rourkela"} description={"I am a Pre-Final Year student pursuing my B.Tech Degree."} Logo={nitrkl}/>
