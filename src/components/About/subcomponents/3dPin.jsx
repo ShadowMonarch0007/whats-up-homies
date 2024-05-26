@@ -5,7 +5,7 @@ import { PinContainer } from "@/components/ui/3d-pin";
 
 export function AnimatedPinDemo({ title, name, nlink, description, Logo }) {
   return (
-    <div className="w-full flex items-center justify-center ">
+    <div className="w-full md:w-[40%] lg:w-full xl:w-full 2xl:w-full flex items-center justify-center ">
       <PinContainer title={title} href={nlink}>
         <Link href={nlink}>
           <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">

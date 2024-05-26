@@ -31,29 +31,29 @@ const Skeleton = () => (
 );
 const items = [
   {
-    title: "The Dawn of Innovation",
-    description: "Explore the birth of groundbreaking ideas and inventions.",
+    title: "Love to Swim!",
+    description: "Member of college swimming team.",
     img: <Image className="w-full rounded-xl" src={Swim}/>,    
   },
   {
-    title: "The Digital Revolution",
-    description: "Dive into the transformative power of technology.",
+    title: "Coding is Life!",
+    description: "Developing websites nowadays.",
     img: <Image className="w-full rounded-xl" src={Code}/>,    
   },
   {
-    title: "The Art of Design",
-    description: "Discover the beauty of thoughtful and functional design.",
+    title: "Next in line are my vocals!",
+    description: "A decent Singer.",
     img: <Image className="w-full rounded-xl" src={Sing}/>,    
   },
   {
-    title: "The Power of Communication",
+    title: "Anime Nerd",
     description:
-      "Understand the impact of effective communication in our lives.",
+      "Anime and Manga keep me sane.",
     img: <div><Image className="w-full lg:hidden md:hidden xl:hidden 2xl:hidden rounded-xl" src={Anime1}/><Image className="w-full hidden lg:block md:block xl:block 2xl:block rounded-xl" src={Anime2}/></div> ,    
   },
   {
-    title: "The Pursuit of Knowledge",
-    description: "Join the quest for understanding and enlightenment.",
+    title: "Cook sometimes!",
+    description: "To fulfill my cravings.",
     img: <Image className="w-full rounded-xl" src={Cook}/>,    
   },
 ];
