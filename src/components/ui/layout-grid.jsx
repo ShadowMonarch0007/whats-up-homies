@@ -19,7 +19,7 @@ const LayoutGrid = ({ cards }) => {
   };
 
   return (
-    <div className="w-full h-full p-10 grid grid-cols-1 md:grid-cols-3  max-w-7xl mx-auto gap-4 relative">
+    <div className="w-full h-full p-10 grid grid-cols-4 max-w-7xl mx-auto gap-5 lg:gap-24 relative">
       {cards.map((card, i) => (
         <div key={i} className={cn(card.className, "")}>
           <motion.div
@@ -28,10 +28,10 @@ const LayoutGrid = ({ cards }) => {
               card.className,
               "relative overflow-hidden",
               selected?.id === card.id
-                ? "rounded-lg cursor-pointer absolute inset-0 h-1/2 w-full md:w-1/2 m-auto z-50 flex justify-center items-center flex-wrap flex-col"
+                ? "rounded-lg cursor-pointer fixed inset-0 h-1/2 w-3/4 mx-auto top-24 z-50 flex justify-center items-center flex-col-reverse"
                 : lastSelected?.id === card.id
-                ? "z-40 bg-white rounded-xl h-full w-full"
-                : "bg-white rounded-xl h-full w-full"
+                ? "z-40 bg-black/50 dark:bg-white/50 rounded-xl h-full w-full"
+                : "bg-black/50 dark:bg-white/50 rounded-xl h-full w-full"
             )}
             layout
           >
@@ -55,17 +55,7 @@ const LayoutGrid = ({ cards }) => {
 const BlurImage = ({ card }) => {
   const [loaded, setLoaded] = useState(false);
   return (
-    <Image
-      src={card.thumbnail}
-      height="500"
-      width="500"
-      onLoad={() => setLoaded(true)}
-      className={cn(
-        "object-cover object-top absolute inset-0 h-full w-full transition duration-200",
-        loaded ? "blur-none" : "blur-md"
-      )}
-      alt="thumbnail"
-    />
+    <div>{card.thumbnail}</div>
   );
 };
 
@@ -79,7 +69,7 @@ const SelectedCard = ({ selected }) => {
         animate={{
           opacity: 0.6,
         }}
-        className="absolute inset-0 h-full w-full bg-black opacity-60 z-10"
+        className="absolute h-full w-full bg-black opacity-60 z-10"
       />
       <motion.div
         initial={{
