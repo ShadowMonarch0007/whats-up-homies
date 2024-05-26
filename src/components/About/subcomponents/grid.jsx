@@ -2,12 +2,11 @@ import React from "react";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import Image from "next/image";
 import Swim from "@/components/About/img/Swimming.avif"
-import Code from "@/components/About/img/coding.jpg"
+import Code1 from "@/components/About/img/coding.jpg"
+import Code2 from "@/components/About/img/coding2.jpg"
 import Sing from "@/components/About/img/singing.jpg"
 import Cook from "@/components/About/img/cooking.jpg"
-import Manga from "@/components/About/img/manga.jpg"
-import Anime1 from "@/components/About/img/am.gif"
-import Anime2 from "@/components/About/img/am2.gif"
+import Anime from "@/components/About/img/anime.gif"
 
 export default function BentoGridDemo() {
   return (
@@ -20,7 +19,7 @@ export default function BentoGridDemo() {
           header={item.header}
           icon={item.icon}
           img={item.img}
-          className={i === 3 || i === 6 ? "md:col-span-2" : ""}
+          className={i === 1 ? "md:col-span-2" : ""}
         />
       ))}
     </BentoGrid>
@@ -38,7 +37,7 @@ const items = [
   {
     title: "Coding is Life!",
     description: "Developing websites nowadays.",
-    img: <Image className="w-full rounded-xl" src={Code}/>,    
+    img: <div><Image className="w-full lg:hidden md:hidden xl:hidden 2xl:hidden rounded-xl" src={Code1}/><Image className="w-full hidden lg:block md:block xl:block 2xl:block rounded-xl" src={Code2}/></div> ,    
   },
   {
     title: "Next in line are my vocals!",
@@ -49,7 +48,7 @@ const items = [
     title: "Anime Nerd",
     description:
       "Anime and Manga keeps me sane.",
-    img: <div><Image className="w-full lg:hidden md:hidden xl:hidden 2xl:hidden rounded-xl" src={Anime1}/><Image className="w-full hidden lg:block md:block xl:block 2xl:block rounded-xl" src={Anime2}/></div> ,    
+    img: <div><Image className="w-full rounded-xl" src={Anime}/></div> ,    
   },
   {
     title: "Cook sometimes!",
