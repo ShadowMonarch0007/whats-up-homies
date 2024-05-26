@@ -23,7 +23,8 @@ export default function RootLayout({ children }) {
             <Headers/>
           </header>
           <main  className="mb-6 lg:mb-10 dark:bg-black bg-white  dark:bg-grid-white/[0.1] bg-grid-black/[0.1]">
-            {children}
+            <div className="bg-gradient-to-b from-black/70 via-transparent to-black/70">
+              <div className="bg-gradient-to-r from-black/70 via-transparent to-black/70">{children}</div></div>            
             </main>
           <Footer/>
         </Providers>

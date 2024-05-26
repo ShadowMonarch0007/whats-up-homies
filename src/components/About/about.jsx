@@ -50,7 +50,7 @@ export default async function Abouts(){
       ];
     return(
         <div>
-            <div className="absolute h-[224%] lg:h-[122%] pointer-events-none top-20 inset-0 flex items-center justify-center bg-white dark:bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+            {/* <div className="absolute pointer-events-none top-20 inset-0 flex items-center justify-center bg-white dark:bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div> */}
             <div className="mt-20 mb-10 flex items-center justify-center">
                 <TypewriterEffectSmooth words={Education}/>
             </div>
