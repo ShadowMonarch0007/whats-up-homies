@@ -48,7 +48,7 @@ const items = [
   {
     title: "Anime Nerd",
     description:
-      "Anime and Manga keep me sane.",
+      "Anime and Manga keeps me sane.",
     img: <div><Image className="w-full lg:hidden md:hidden xl:hidden 2xl:hidden rounded-xl" src={Anime1}/><Image className="w-full hidden lg:block md:block xl:block 2xl:block rounded-xl" src={Anime2}/></div> ,    
   },
   {

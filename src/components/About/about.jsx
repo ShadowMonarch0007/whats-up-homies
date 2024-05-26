@@ -25,7 +25,7 @@ export default async function Abouts() {
       text: "I",
     },
     {
-      text: "Learn.",
+      text: "Learn",
     },
   ];
   const Hobbies = [
@@ -51,7 +51,7 @@ export default async function Abouts() {
   ];
   return (
     <div>
-      <div className="mt-20 mb-10 flex items-center justify-center">
+      <div className="mt-0 mb-10 flex items-center justify-center">
         <TypewriterEffectSmooth words={Education} />
       </div>
       <div className="flex flex-wrap lg:flex-nowrap xl:flex-nowrap 2xl:flex-nowrap gap-20 items-center justify-center md:justify-center">
