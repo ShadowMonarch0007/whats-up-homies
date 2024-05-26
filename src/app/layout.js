@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
           <header>
             <Headers/>
           </header>
-          <main  className="mt-20 mb-6 lg:mb-10 dark:bg-black bg-white  dark:bg-grid-white/[0.1] bg-grid-black/[0.1]">
+          <main  className="mt-24 mb-6 lg:mb-10 dark:bg-black bg-white  dark:bg-grid-white/[0.1] bg-grid-black/[0.1]">
             <div className="bg-gradient-to-b from-white/90 dark:from-black/90 via-transparent dark:via-transparent to-white/90  dark:to-black/90">
               <div className="bg-gradient-to-r from-white/70 dark:from-black/70 via-transparent dark:via-transparent to-white/70 dark:to-black/70">{children}</div></div>            
             </main>
