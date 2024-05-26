@@ -21,7 +21,7 @@ export default async function Abouts(){
           text: "where",
         },
         {
-          text: "you",
+          text: "I",
         },
         {
           text: "Learn.",
@@ -42,7 +42,7 @@ export default async function Abouts(){
           text: "which",
         },
         {
-          text: "you",
+          text: "I",
         },
         {
           text: "Enjoy",
