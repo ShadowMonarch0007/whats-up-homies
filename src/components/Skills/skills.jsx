@@ -5,6 +5,7 @@ import HTML from "@/components/Skills/svg/html.svg"
 import NextJS from "@/components/Skills/svg/next-js.svg"
 import ReactJS from "@/components/Skills/svg/react.svg"
 import WebDev from "@/components/Skills/img/WebDev.jpg"
+import { BackgroundGradient } from "../ui/background-gradient";
 
 export default async function Skills() {
     return (
@@ -79,7 +80,7 @@ const cards = [
         id: 3,
         content: <SkeletonThree />,
         className: "col-span-2 row-span-2 ",
-        thumbnail: <Image className="h-full w-full" src={HTML} />
+        thumbnail: <BackgroundGradient><Image className="h-full w-full" src={HTML} /></BackgroundGradient>
     },
     {
         id: 4,
