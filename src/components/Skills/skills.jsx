@@ -66,7 +66,7 @@ const SkeletonThree = () => {
 const SkeletonFour = () => {
     return (
         <div>
-            <Image src={WebDev} width={500} height={350}/>
+            <Image className="lg:h-[500px] lg:w-[350px]" src={WebDev} width={500} height={350}/>
         </div>
     );
 };
@@ -94,7 +94,7 @@ const cards = [
         id: 4,
         content: <SkeletonFour />,
         className: "col-span-1",
-        thumbnail: <div className="bg-[#e0e0e0]/50 dark:bg-[#202020]/50 rounded-xl lg:rounded-3xl border-3 lg:border-5 border-[#e0e0e0] dark:border-[#202020]"><Image className="h-full w-full" /></div>
+        thumbnail: <div className="bg-[#e0e0e0]/50 dark:bg-[#202020]/50 rounded-xl lg:rounded-3xl border-3 lg:border-5 border-[#e0e0e0] dark:border-[#202020]"><Image className="h-full w-full" src={HTML} /></div>
     },
     {
         id: 5,
