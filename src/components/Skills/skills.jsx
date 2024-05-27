@@ -13,6 +13,7 @@ import NextJS from "@/components/Skills/svg/next-js.svg"
 import NextJSL from "@/components/Skills/svg/next-js-light.svg"
 import ReactJS from "@/components/Skills/svg/react.svg"
 import Tcss from "@/components/Skills/svg/tailwind.svg"
+import FM from "@/components/Skills/svg/framer.svg"
 import WebDev from "@/components/Skills/img/WebDev.jpg"
 
 export default async function Skills() {
@@ -28,12 +29,7 @@ export default async function Skills() {
 const SkeletonOne = () => {
     return (
         <div>
-            <p className="font-bold text-4xl text-white">House in the woods</p>
-            <p className="font-normal text-base text-white"></p>
-            <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-                A serene and tranquil retreat, this house in the woods offers a peaceful
-                escape from the hustle and bustle of city life.
-            </p>
+            <Image src={WebDev} width={500} height={350}/>
         </div>
     );
 };
@@ -41,25 +37,14 @@ const SkeletonOne = () => {
 const SkeletonTwo = () => {
     return (
         <div>
-            <p className="font-bold text-4xl text-white">House above the clouds</p>
-            <p className="font-normal text-base text-white"></p>
-            <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-                Perched high above the world, this house offers breathtaking views and a
-                unique living experience. It&apos;s a place where the sky meets home,
-                and tranquility is a way of life.
-            </p>
+            <Image src={WebDev} width={500} height={350}/>
         </div>
     );
 };
 const SkeletonThree = () => {
     return (
         <div>
-            <p className="font-bold text-4xl text-white">Greens all over</p>
-            <p className="font-normal text-base text-white"></p>
-            <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-                A house surrounded by greenery and nature&apos;s beauty. It&apos;s the
-                perfect place to relax, unwind, and enjoy life.
-            </p>
+            <Image src={WebDev} width={500} height={350}/>
         </div>
     );
 };
@@ -118,7 +103,7 @@ const cards = [
         id: 8,
         content: <SkeletonFour />,
         className: "col-span-2 row-span-2",
-        thumbnail: <div className="flex flex-wrap gap-5 lg:gap-x-24 justify-center items-center bg-[#e0e0e0]/50 dark:bg-[#202020]/50 rounded-xl lg:rounded-3xl border-3 lg:border-5 border-[#e0e0e0] dark:border-[#202020]"><Image className="h-full w-[40%] hidden dark:block" src={NextJS} /><Image className="h-full w-[40%] dark:hidden" src={NextJSL} /><Image className="h-full w-[40%]" src={ReactJS} /><Image className="h-full w-[40%]" src={Tcss} /><Image className="h-full w-[40%]" src={HTML} /></div>
+        thumbnail: <div className="flex flex-wrap gap-5 lg:gap-x-24 justify-center items-center bg-[#e0e0e0]/50 dark:bg-[#202020]/50 rounded-xl lg:rounded-3xl border-3 lg:border-5 border-[#e0e0e0] dark:border-[#202020]"><Image className="h-full w-[40%] hidden dark:block" src={NextJS} /><Image className="h-full w-[40%] dark:hidden" src={NextJSL} /><Image className="h-full w-[40%]" src={ReactJS} /><Image className="h-full w-[40%]" src={Tcss} /><Image className="h-full w-[40%]" src={FM} /></div>
     },
     {
         id: 9,
