@@ -30,8 +30,8 @@ const LayoutGrid = ({ cards }) => {
               selected?.id === card.id
                 ? "rounded-lg cursor-pointer fixed inset-0 h-1/2 w-3/4 m-auto z-50 flex justify-center items-center flex-wrap"
                 : lastSelected?.id === card.id
-                ? "z-40 bg-black/50 dark:bg-white/50 rounded-xl h-full w-full"
-                : "bg-black/50 dark:bg-white/50 rounded-xl h-full w-full"
+                ? "z-40 bg-transparent rounded-xl h-full w-full"
+                : "bg-transparent rounded-xl h-full w-full"
             )}
             layout
           >
