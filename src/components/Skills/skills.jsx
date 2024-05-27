@@ -3,7 +3,7 @@ import Image from "next/image";
 import LayoutGrid from "../ui/layout-grid";
 import Cpp from "@/components/Skills/svg/cpp.svg"
 import Java from "@/components/Skills/svg/java.svg"
-import Cl from "@/components/Skills/svg/clang.svg"
+import Cl from "@/components/Skills/svg/Clang.svg"
 import Fwd from "@/components/Skills/svg/Fwebdev.svg"
 import HTML from "@/components/Skills/svg/html.svg"
 import CSS from "@/components/Skills/svg/css.svg"
