@@ -19,7 +19,7 @@ const LayoutGrid = ({ cards }) => {
   };
 
   return (
-    <div className="w-full h-full p-10 grid grid-cols-4 max-w-7xl mx-auto gap-5 lg:gap-24 relative">
+    <div className="w-full h-full lg:p-20 grid grid-cols-4 mx-auto gap-5 lg:gap-24 relative">
       {cards.map((card, i) => (
         <div key={i} className={cn(card.className, "")}>
           <motion.div
@@ -30,8 +30,8 @@ const LayoutGrid = ({ cards }) => {
               selected?.id === card.id
                 ? "rounded-lg cursor-pointer fixed inset-0 h-1/2 w-3/4 m-auto z-50 flex justify-center items-center flex-wrap"
                 : lastSelected?.id === card.id
-                ? "z-40 bg-transparent rounded-3xl h-full w-full"
-                : "bg-transparent rounded-3xl h-full w-full"
+                ? "z-40 bg-transparent rounded-xl lg:rounded-3xl h-full w-full"
+                : "bg-transparent rounded-xl lg:rounded-3xl h-full w-full"
             )}
             layout
           >
