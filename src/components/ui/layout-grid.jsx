@@ -84,7 +84,7 @@ const SelectedCard = ({ selected }) => {
           duration: 0.3,
           ease: "easeInOut",
         }}
-        className="relative h-[450px] w-[600px] items-center justify-center px-8 pb-4 z-[70]"
+        className="relative h-1/2 w-full md:h-[405px] md:w-[540px] lg:h-[450px] lg:w-[600px] items-center justify-center px-8 pb-4 z-[70]"
       >
         {selected?.content}
       </motion.div>

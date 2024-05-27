@@ -18,7 +18,7 @@ import WebDev from "@/components/Skills/img/WebDev.jpg"
 export default async function Skills() {
     return (
         <div>
-            <div className="w-full">
+            <div className="w-full py-10 lg:py-0 xl:py-0 2xl:py-0 ">
                 <LayoutGrid cards={cards} />
             </div>
         </div>
@@ -86,19 +86,19 @@ const cards = [
     },
     {
         id: 3,
-        content: <SkeletonThree />,
+        content: <SkeletonFour />,
         className: "col-span-2 row-span-2 ",
         thumbnail: <div className="bg-[#e0e0e0]/50 dark:bg-[#202020]/50 rounded-xl lg:rounded-3xl border-3 lg:border-5 border-[#e0e0e0] dark:border-[#202020]"><Image className="h-full w-full my-2 lg:my-6" src={Fwd} /></div>
     },
     {
         id: 4,
-        content: <SkeletonFour />,
+        content: <SkeletonOne />,
         className: "col-span-1",
         thumbnail: <div className="bg-[#e0e0e0]/50 dark:bg-[#202020]/50 rounded-xl lg:rounded-3xl border-3 lg:border-5 border-[#e0e0e0] dark:border-[#202020]"><Image className="h-full w-full" src={HTML} /></div>
     },
     {
         id: 5,
-        content: <SkeletonFour />,
+        content: <SkeletonOne />,
         className: "col-span-1",
         thumbnail: <div className="bg-[#e0e0e0]/50 dark:bg-[#202020]/50 rounded-xl lg:rounded-3xl border-3 lg:border-5 border-[#e0e0e0] dark:border-[#202020]"><Image className="h-full w-full" src={Cl} /></div>
     },
@@ -132,24 +132,24 @@ const cards = [
         className: "col-span-2",
         thumbnail: <div className="flex gap-5 lg:gap-24 justify-center items-center bg-[#e0e0e0]/50 dark:bg-[#202020]/50 rounded-xl lg:rounded-3xl border-3 lg:border-5 border-[#e0e0e0] dark:border-[#202020] "><Image className="h-full w-[38.5%] md:w-[39.5%] lg:w-[32.5%]" src={HTML} /><Image className="h-full w-[38.5%] md:w-[39.5%] lg:w-[32.5%]" src={HTML} /></div>
     },
-    {
-        id: 11,
-        content: <SkeletonFour />,
-        className: "col-span-2",
-        thumbnail: <div className="flex gap-5 lg:gap-24 justify-center items-center bg-[#e0e0e0]/50 dark:bg-[#202020]/50 rounded-xl lg:rounded-3xl border-3 lg:border-5 border-[#e0e0e0] dark:border-[#202020] "><Image className="h-full w-[41%] md:w-[47%] lg:w-[41%]" src={HTML} /><Image className="h-full w-[41%] md:w-[47%] lg:w-[41%]" src={HTML} /></div>
-    },
-    {
-        id: 12,
-        content: <SkeletonFour />,
-        className: "col-span-1",
-        thumbnail: <div className="bg-[#e0e0e0]/50 dark:bg-[#202020]/50 rounded-xl lg:rounded-3xl border-3 lg:border-5 border-[#e0e0e0] dark:border-[#202020]"><Image className="h-full w-full" src={HTML} /></div>
-    },
-    {
-        id: 13,
-        content: <SkeletonFour />,
-        className: "col-span-1",
-        thumbnail: <div className="bg-[#e0e0e0]/50 dark:bg-[#202020]/50 rounded-xl lg:rounded-3xl border-3 lg:border-5 border-[#e0e0e0] dark:border-[#202020]"><Image className="h-full w-full" src={HTML} /></div>
-    },
+    // {
+    //     id: 11,
+    //     content: <SkeletonFour />,
+    //     className: "col-span-2",
+    //     thumbnail: <div className="flex gap-5 lg:gap-24 justify-center items-center bg-[#e0e0e0]/50 dark:bg-[#202020]/50 rounded-xl lg:rounded-3xl border-3 lg:border-5 border-[#e0e0e0] dark:border-[#202020] "><Image className="h-full w-[41%] md:w-[47%] lg:w-[41%]" src={HTML} /><Image className="h-full w-[41%] md:w-[47%] lg:w-[41%]" src={HTML} /></div>
+    // },
+    // {
+    //     id: 12,
+    //     content: <SkeletonFour />,
+    //     className: "col-span-1",
+    //     thumbnail: <div className="bg-[#e0e0e0]/50 dark:bg-[#202020]/50 rounded-xl lg:rounded-3xl border-3 lg:border-5 border-[#e0e0e0] dark:border-[#202020]"><Image className="h-full w-full" src={HTML} /></div>
+    // },
+    // {
+    //     id: 13,
+    //     content: <SkeletonFour />,
+    //     className: "col-span-1",
+    //     thumbnail: <div className="bg-[#e0e0e0]/50 dark:bg-[#202020]/50 rounded-xl lg:rounded-3xl border-3 lg:border-5 border-[#e0e0e0] dark:border-[#202020]"><Image className="h-full w-full" src={HTML} /></div>
+    // },
     
 ];
 
