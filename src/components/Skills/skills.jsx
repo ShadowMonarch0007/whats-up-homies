@@ -66,7 +66,7 @@ const SkeletonThree = () => {
 const SkeletonFour = () => {
     return (
         <div>
-            <Image className="lg:h-[500px] lg:w-[350px]" src={WebDev} width={500} height={350}/>
+            <Image src={WebDev} width={500} height={350}/>
         </div>
     );
 };
