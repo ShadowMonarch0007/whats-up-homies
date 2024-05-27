@@ -4,6 +4,7 @@ import LayoutGrid from "../ui/layout-grid";
 import HTML from "@/components/Skills/svg/html.svg"
 import NextJS from "@/components/Skills/svg/next-js.svg"
 import ReactJS from "@/components/Skills/svg/react.svg"
+import WebDev from "@/components/Skills/img/WebDev.jpg"
 
 export default async function Skills() {
     return (
@@ -56,13 +57,7 @@ const SkeletonThree = () => {
 const SkeletonFour = () => {
     return (
         <div>
-            <Image src={HTML} height={50} width={50} />
-            <p className="font-bold text-4xl text-white">Rivers are serene</p>
-            <p className="font-normal text-base text-white"></p>
-            <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-                A house by the river is a place of peace and tranquility. It&apos;s the
-                perfect place to relax, unwind, and enjoy life.
-            </p>
+            <Image src={WebDev} width={500} height={350}/>
         </div>
     );
 };
@@ -83,7 +78,7 @@ const cards = [
     {
         id: 3,
         content: <SkeletonThree />,
-        className: "col-span-1",
+        className: "col-span-2 row-span-2 ",
         thumbnail: <Image className="h-full w-full" src={HTML} />
     },
     {
@@ -107,20 +102,20 @@ const cards = [
     {
         id: 7,
         content: <SkeletonFour />,
-        className: "col-span-4",
-        thumbnail: <div className="flex gap-5 lg:gap-24 justify-center items-center "><Image className="h-full w-1/5" src={HTML} /><Image className="h-full w-1/5" src={HTML} /><Image className="h-full w-1/5" src={HTML} /><Image className="h-full w-1/5" src={HTML} /></div>
+        className: "col-span-1",
+        thumbnail: <Image className="h-full w-full" src={HTML} />
     },
     {
         id: 8,
         content: <SkeletonFour />,
-        className: "col-span-4",
-        thumbnail: <div className="flex gap-5 lg:gap-24 justify-center items-center "><Image className="h-full w-1/5" src={HTML} /><Image className="h-full w-1/5" src={HTML} /><Image className="h-full w-1/5" src={HTML} /><Image className="h-full w-1/5" src={HTML} /></div>
+        className: "col-span-2 row-span-2",
+        thumbnail: <div className="flex flex-wrap gap-5 lg:gap-x-24 justify-center items-center "><Image className="h-full w-[40%]" src={HTML} /><Image className="h-full w-[40%]" src={HTML} /><Image className="h-full w-[40%]" src={HTML} /><Image className="h-full w-[40%]" src={HTML} /></div>
     },
     {
         id: 9,
         content: <SkeletonFour />,
-        className: "col-span-1",
-        thumbnail: <Image className="h-full w-full" src={HTML} />
+        className: "col-span-2 row-span-2",
+        thumbnail: <div className="flex flex-wrap gap-5 lg:gap-x-24 justify-center items-center "><Image className="h-full w-[40%]" src={HTML} /><Image className="h-full w-[40%]" src={HTML} /><Image className="h-full w-[40%]" src={HTML} /><Image className="h-full w-[40%]" src={HTML} /></div>
     },
     {
         id: 10,
@@ -130,6 +125,12 @@ const cards = [
     },
     {
         id: 11,
+        content: <SkeletonFour />,
+        className: "col-span-1",
+        thumbnail: <Image className="h-full w-full" src={HTML} />
+    },
+    {
+        id: 12,
         content: <SkeletonFour />,
         className: "col-span-2",
         thumbnail: <div className="flex gap-5 lg:gap-24 justify-center items-center "><Image className="h-full w-[40%]" src={HTML} /><Image className="h-full w-[40%]" src={HTML} /></div>

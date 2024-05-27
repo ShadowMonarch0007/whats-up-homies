@@ -28,7 +28,7 @@ const LayoutGrid = ({ cards }) => {
               card.className,
               "relative overflow-hidden",
               selected?.id === card.id
-                ? "rounded-lg cursor-pointer fixed inset-0 h-1/2 w-3/4 mx-auto top-24 z-50 flex justify-center items-center flex-col-reverse"
+                ? "rounded-lg cursor-pointer fixed inset-0 h-1/2 w-3/4 m-auto z-50 flex justify-center items-center flex-wrap"
                 : lastSelected?.id === card.id
                 ? "z-40 bg-black/50 dark:bg-white/50 rounded-xl h-full w-full"
                 : "bg-black/50 dark:bg-white/50 rounded-xl h-full w-full"
@@ -36,7 +36,7 @@ const LayoutGrid = ({ cards }) => {
             layout
           >
             {selected?.id === card.id && <SelectedCard selected={selected} />}
-            <BlurImage card={card} />
+            <BlurImage className="" card={card} />
           </motion.div>
         </div>
       ))}
@@ -61,7 +61,7 @@ const BlurImage = ({ card }) => {
 
 const SelectedCard = ({ selected }) => {
   return (
-    <div className="bg-transparent h-full w-full flex flex-col justify-end rounded-lg shadow-2xl relative z-[60]">
+    <div className="bg-transparent h-full w-full flex flex-col justify-center items-center rounded-lg shadow-2xl relative z-[60]">
       <motion.div
         initial={{
           opacity: 0,
@@ -69,7 +69,7 @@ const SelectedCard = ({ selected }) => {
         animate={{
           opacity: 0.6,
         }}
-        className="absolute h-full w-full bg-black opacity-60 z-10"
+        className="absolute h-full w-full bg-transparent z-10"
       />
       <motion.div
         initial={{
@@ -84,7 +84,7 @@ const SelectedCard = ({ selected }) => {
           duration: 0.3,
           ease: "easeInOut",
         }}
-        className="relative px-8 pb-4 z-[70]"
+        className="relative h-[450px] w-[600px] items-center justify-center px-8 pb-4 z-[70]"
       >
         {selected?.content}
       </motion.div>
