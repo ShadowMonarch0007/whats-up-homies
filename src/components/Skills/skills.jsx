@@ -105,7 +105,7 @@ const cards = [
         id: 8,
         content: <SkeletonFour />,
         className: "col-span-2 row-span-2",
-        thumbnail: <div className="flex flex-wrap gap-5 lg:gap-x-24 justify-center items-center bg-[#e0e0e0]/50 dark:bg-[#202020]/50 rounded-xl lg:rounded-3xl border-3 lg:border-5 border-[#e0e0e0] dark:border-[#202020]"><Image className="h-full w-[40%] hidden dark:block" src={NextJS} /><Image className="h-full w-[40%] dark:hidden" src={NextJSL} /><Image className="h-full w-[40%]" src={ReactJS} /><Image className="h-full w-[40%]" src={Tcss} /><Image className="h-full w-[40%] p-4 md:p-5 lg:p-6" src={FM} /></div>
+        thumbnail: <div className="flex flex-wrap gap-5 lg:gap-x-24 justify-center items-center bg-[#e0e0e0]/50 dark:bg-[#202020]/50 rounded-xl lg:rounded-3xl border-3 lg:border-5 border-[#e0e0e0] dark:border-[#202020]"><Image className="h-full w-[40%] hidden dark:block" src={NextJS} /><Image className="h-full w-[40%] dark:hidden" src={NextJSL} /><Image className="h-full w-[40%]" src={ReactJS} /><Image className="h-full w-[40%]" src={Tcss} /><Image className="h-full w-[40%] p-3 md:p-5 lg:p-6" src={FM} /></div>
     },
     {
         id: 9,
