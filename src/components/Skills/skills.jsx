@@ -116,7 +116,7 @@ const cards = [
         id: 10,
         content: <SkeletonFour />,
         className: "row-span-2 col-span-1",
-        thumbnail: <div className="flex flex-col gap-y-3 md:gap-y-0 lg:gap-y-14 justify-center items-center bg-[#e0e0e0]/50 dark:bg-[#202020]/50 rounded-xl lg:rounded-3xl border-3 lg:border-5 border-[#e0e0e0] dark:border-[#202020] "><Image className="h-full" src={Chart} /><Image className="h-full " src={Chart} /></div>
+        thumbnail: <div className="flex flex-col gap-y-3 justify-center items-center bg-[#e0e0e0]/50 dark:bg-[#202020]/50 rounded-xl lg:rounded-3xl border-3 lg:border-5 border-[#e0e0e0] dark:border-[#202020] "><Image className="h-full w-full md:h-[87%] md:w-[87%]" src={Chart} /><Image className="h-full w-full md:h-[87%] md:w-[87%]" src={Chart} /></div>
     },
     // {
     //     id: 11,
