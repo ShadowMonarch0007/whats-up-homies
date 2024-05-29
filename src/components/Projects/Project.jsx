@@ -21,8 +21,8 @@ export default async function Projects(){
 const Portfolio_Old = [
     {
       id: 1,
-      name: "Bootstrap",
-      image: BS,
+      name: "Javascript",
+      image: JS,
     },
     {
       id: 2,
@@ -36,7 +36,7 @@ const Portfolio_Old = [
     },
     {
       id: 4,
-      name: "Javascript",
-      image: JS,
+      name: "Bootstrap",
+      image: BS,
     },
   ];
