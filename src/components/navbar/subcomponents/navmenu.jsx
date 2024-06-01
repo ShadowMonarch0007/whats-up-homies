@@ -1,47 +1,57 @@
+"use client"
 import React from "react";
 import Link from "next/link";
 import {
     NavigationMenu,
-    NavigationMenuContent,
-    NavigationMenuIndicator,
     NavigationMenuItem,
-    NavigationMenuLink,
-    NavigationMenuList,
     NavigationMenuTrigger,
-    NavigationMenuViewport,
-} from "@/components/ui/navigation-menu"
+    NavigationMenuList
+} from "@/components/ui/navigation-menu";
+import { usePathname } from "next/navigation";
 
+export default function NavMenu() {
+    const pathname = usePathname();
 
-export default async function NavMenu() {
+    const isActive = (route) => pathname === route;
+
     return (
         <div className="flex items-center justify-center">
             <NavigationMenu>
                 <NavigationMenuList>
-                    <Link href="./"><NavigationMenuItem>
-                        <NavigationMenuTrigger className="home">Home</NavigationMenuTrigger>
-                    </NavigationMenuItem></Link>
-                    <Link href="./About"><NavigationMenuItem>
-                        <NavigationMenuTrigger>About</NavigationMenuTrigger>
-                    </NavigationMenuItem></Link>
-                    <Link href="./Skills"><NavigationMenuItem>
-                        <NavigationMenuTrigger>Skills</NavigationMenuTrigger>
-                    </NavigationMenuItem></Link>
-                    <Link href="./Experience"><NavigationMenuItem>
-                        <NavigationMenuTrigger>Experience</NavigationMenuTrigger>
-                    </NavigationMenuItem></Link>
-                    <Link href="./Projects"><NavigationMenuItem>
-                        <NavigationMenuTrigger>Projects</NavigationMenuTrigger>
-                    </NavigationMenuItem></Link>
-                    <Link href="./Connect"><NavigationMenuItem>
-                        <NavigationMenuTrigger>Connect</NavigationMenuTrigger>
-                    </NavigationMenuItem></Link>
+                    <NavigationMenuItem>
+                        <Link href="/" passHref>
+                            <NavigationMenuTrigger className={isActive("/") ? "active bg-[#e0e0e0] dark:bg-accent text-accent-foreground outline-none" : ""}>Home</NavigationMenuTrigger>
+                        </Link>
+                    </NavigationMenuItem>
+                    <NavigationMenuItem>
+                        <Link href="/About" passHref>
+                            <NavigationMenuTrigger className={isActive("/About") ? "active bg-[#e0e0e0] dark:bg-accent text-accent-foreground outline-none" : ""}>About</NavigationMenuTrigger>
+                        </Link>
+                    </NavigationMenuItem>
+                    <NavigationMenuItem>
+                        <Link href="/Skills" passHref>
+                            <NavigationMenuTrigger className={isActive("/Skills") ? "active bg-[#e0e0e0] dark:bg-accent text-accent-foreground outline-none" : ""}>Skills</NavigationMenuTrigger>
+                        </Link>
+                    </NavigationMenuItem>
+                    <NavigationMenuItem>
+                        <Link href="/Experience" passHref>
+                            <NavigationMenuTrigger className={isActive("/Experience") ? "active bg-[#e0e0e0] dark:bg-accent text-accent-foreground outline-none" : ""}>Experience</NavigationMenuTrigger>
+                        </Link>
+                    </NavigationMenuItem>
+                    <NavigationMenuItem>
+                        <Link href="/Projects" passHref>
+                            <NavigationMenuTrigger className={isActive("/Projects") ? "active bg-[#e0e0e0] dark:bg-accent text-accent-foreground outline-none" : ""}>Projects</NavigationMenuTrigger>
+                        </Link>
+                    </NavigationMenuItem>
+                    <NavigationMenuItem>
+                        <Link href="/Connect" passHref>
+                            <NavigationMenuTrigger className={isActive("/Connect") ? "active bg-[#e0e0e0] dark:bg-accent text-accent-foreground outline-none" : ""}>Connect</NavigationMenuTrigger>
+                        </Link>
+                    </NavigationMenuItem>
                 </NavigationMenuList>
             </NavigationMenu>
-
         </div>
     );
-}
+};
 
-{/* <NavigationMenuContent>
-                            <NavigationMenuLink>Link</NavigationMenuLink>
-                        </NavigationMenuContent> */}
+
