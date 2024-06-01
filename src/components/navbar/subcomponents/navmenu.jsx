@@ -51,10 +51,10 @@ export default function NavMenu() {
                             <NavigationMenuTrigger className={isActive("/Skills") ? "active bg-[#e0e0e0] dark:bg-accent text-accent-foreground outline-none" : ""}>Skills</NavigationMenuTrigger>
                         </Link>
                         <NavigationMenuContent>
-                            <div className="w-[40vw] h-[50vh] hidden dark:block">
+                            <div className="w-[40vw] h-[60vh] hidden dark:block">
                                 <Image src={skillImg}/>
                             </div>
-                            <div className="w-[40vw] h-[50vh] dark:hidden">
+                            <div className="w-[40vw] h-[60vh] dark:hidden">
                                 <Image src={skillLImg}/>
                             </div>
                         </NavigationMenuContent>
