@@ -19,10 +19,10 @@ export function ConnectFormDemo() {
     <div className="max-w-4xl w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-[#e0e0e0]/50 dark:bg-[#202020]/50 border-4
     border-[#e0e0e0] dark:border-[#202020]">
       <h2 className="font-bold text-xl lg:text-2xl text-neutral-800 dark:text-neutral-200">
-        Lets get in touch
+        Let&apos;s get in touch
       </h2>
       <p className="text-neutral-600 text-sm lg:text-medium mt-2 dark:text-neutral-300">
-      Reach out to me today and lets discuss how I can help you achieve your goals.
+      Reach out to me today and let&apos;s discuss how I can help you.
       </p>
 
       <form className="my-8" onSubmit={handleSubmit}>
@@ -62,8 +62,8 @@ export function ConnectFormDemo() {
 const BottomGradient = () => {
   return (
     <>
-      <span className="group-hover/btn:opacity-100 block transition duration-500 opacity-0 absolute h-px w-full -bottom-px inset-x-0 bg-gradient-to-r from-transparent via-cyan-900 dark:via-cyan-500 to-transparent" />
-      <span className="group-hover/btn:opacity-100 blur-sm block transition duration-500 opacity-0 absolute h-px w-1/2 mx-auto -bottom-px inset-x-10 bg-gradient-to-r from-transparent via-indigo-900 dark:via-indigo-500 to-transparent" />
+      <span className="group-hover/btn:opacity-100 block transition duration-500 opacity-0 absolute h-px w-full -bottom-px inset-x-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent" />
+      <span className="group-hover/btn:opacity-100 blur-sm block transition duration-500 opacity-0 absolute h-px w-1/2 mx-auto -bottom-px inset-x-10 bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />
     </>
   );
 };
