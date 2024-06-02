@@ -10,7 +10,7 @@ export default async function Abouts() {
   const Education = [
     {
       text: "Education",
-      className: "text-blue-500 dark:text-blue-500",
+      className: "text-red-500 dark:text-red-500",
     },
     {
       text: ":",
@@ -31,7 +31,7 @@ export default async function Abouts() {
   const Hobbies = [
     {
       text: "Hobbies",
-      className: "text-blue-500 dark:text-blue-500",
+      className: "text-red-500 dark:text-red-500",
     },
     {
       text: ":",
