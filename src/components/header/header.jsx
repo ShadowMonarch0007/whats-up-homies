@@ -8,7 +8,7 @@ import Navbar from "../navbar/navbar";
 
 export default async function Headers() {
     return (
-        <div className="fixed w-full top-0 left-0 z-[51] rounded-full bg-white dark:bg-black flex items-center justify-between pt-2.5 pb-2.5 px-5 lg:px-10">
+        <div className="fixed w-full top-0 left-0 z-[51] bg-white dark:bg-black flex items-center justify-between pt-2.5 pb-2.5 px-5 lg:px-10">
             <div className="w-[30.5%] lg:hidden md:hidden xl:hidden 2xl:hidden">
 
             </div>
