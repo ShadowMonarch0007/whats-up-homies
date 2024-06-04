@@ -44,7 +44,7 @@ const CARDS = [
             <div className="flex items-center justify-between">
                 <div className="flex flex-col items-start justify-start"><Highlight className="text-sm lg:text-lg">St. Xavier&apos;s High School</Highlight>
                     <p className="text-sm lg:text-base">I have done my matriculation in I.C.S.E Board.</p></div>
-                <Image className="rounded-2xl lg:h-40 lg:w-40" src={sxp} height={80} width={80} />
+                <Image className="rounded-2xl h-20 w-20 lg:h-40 lg:w-40" src={sxp}/>
 
             </div>
         ),
@@ -55,7 +55,7 @@ const CARDS = [
             <div className="flex items-center justify-between">
                 <div className="flex flex-col items-start justify-start"><Highlight className="text-sm lg:text-lg">Love to Swim!</Highlight>
                     <p className="text-sm lg:text-base">Member of college swimming team.</p></div>
-                <Image className="rounded-2xl lg:h-40 lg:w-40" src={swim} height={80} width={80} />
+                <Image className="rounded-2xll h-20 w-20lg:h-40 lg:w-40" src={swim}/>
             </div>
         ),
     },
@@ -65,7 +65,7 @@ const CARDS = [
             <div className="flex items-center justify-between">
                 <div className="flex flex-col items-start justify-start"><Highlight className="text-sm lg:text-lg">Coding is Life!</Highlight>
                     <p className="text-sm lg:text-base">Developing website nowadays.</p></div>
-                <Image className="rounded-2xl lg:h-40 lg:w-40" src={code} height={80} width={80} />
+                <Image className="rounded-2xl h-20 w-20 lg:h-40 lg:w-40" src={code}/>
             </div>
         ),
     },
@@ -75,7 +75,7 @@ const CARDS = [
             <div className="flex items-center justify-between">
                 <div className="flex flex-col items-start justify-start"><Highlight className="text-sm lg:text-lg">NIT Rourkela</Highlight>
                     <p className="text-sm lg:text-base">I am a Pre-Final Year student pursuing my B.Tech Degree.</p></div>
-                <Image className="rounded-2xl lg:h-40 lg:w-40" src={nitrkl} height={80} width={80} />
+                <Image className="rounded-2xl h-20 w-20 lg:h-40 lg:w-40" src={nitrkl}/>
             </div>
         ),
     },
@@ -85,7 +85,7 @@ const CARDS = [
             <div className="flex items-center justify-between">
                 <div className="flex flex-col items-start justify-start"><Highlight className="text-sm lg:text-lg">Baldwin Academy</Highlight>
                     <p className="text-sm lg:text-base">I have done my intermediate in C.B.S.E Board.</p></div>
-                <Image className="rounded-2xl lg:h-40 lg:w-40" src={ba} height={80} width={80} />
+                <Image className="rounded-2xl h-20 w-20 lg:h-40 lg:w-40" src={ba}/>
             </div>
         ),
     },
