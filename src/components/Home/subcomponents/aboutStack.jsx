@@ -50,22 +50,12 @@ const CARDS = [
         ),
     },
     {
-        id: 1,
+        id: 4,
         content: (
             <div className="flex items-center justify-between">
-                <div className="flex flex-col items-start justify-start"><Highlight className="text-sm lg:text-lg">Baldwin Academy</Highlight>
-                    <p className="text-sm lg:text-base">I have done my intermediate in C.B.S.E Board.</p></div>
-                <Image className="rounded-2xl lg:h-40 lg:w-40" src={ba} height={80} width={80} />
-            </div>
-        ),
-    },
-    {
-        id: 2,
-        content: (
-            <div className="flex items-center justify-between">
-                <div className="flex flex-col items-start justify-start"><Highlight className="text-sm lg:text-lg">NIT Rourkela</Highlight>
-                    <p className="text-sm lg:text-base">I am a Pre-Final Year student pursuing my B.Tech Degree.</p></div>
-                <Image className="rounded-2xl lg:h-40 lg:w-40" src={nitrkl} height={80} width={80} />
+                <div className="flex flex-col items-start justify-start"><Highlight className="text-sm lg:text-lg">Love to Swim!</Highlight>
+                    <p className="text-sm lg:text-base">Member of college swimming team.</p></div>
+                <Image className="rounded-2xl lg:h-40 lg:w-40" src={swim} height={80} width={80} />
             </div>
         ),
     },
@@ -80,13 +70,24 @@ const CARDS = [
         ),
     },
     {
-        id: 4,
+        id: 2,
         content: (
             <div className="flex items-center justify-between">
-                <div className="flex flex-col items-start justify-start"><Highlight className="text-sm lg:text-lg">Love to Swim!</Highlight>
-                    <p className="text-sm lg:text-base">Member of college swimming team.</p></div>
-                <Image className="rounded-2xl lg:h-40 lg:w-40" src={swim} height={80} width={80} />
+                <div className="flex flex-col items-start justify-start"><Highlight className="text-sm lg:text-lg">NIT Rourkela</Highlight>
+                    <p className="text-sm lg:text-base">I am a Pre-Final Year student pursuing my B.Tech Degree.</p></div>
+                <Image className="rounded-2xl lg:h-40 lg:w-40" src={nitrkl} height={80} width={80} />
             </div>
         ),
     },
+    {
+        id: 1,
+        content: (
+            <div className="flex items-center justify-between">
+                <div className="flex flex-col items-start justify-start"><Highlight className="text-sm lg:text-lg">Baldwin Academy</Highlight>
+                    <p className="text-sm lg:text-base">I have done my intermediate in C.B.S.E Board.</p></div>
+                <Image className="rounded-2xl lg:h-40 lg:w-40" src={ba} height={80} width={80} />
+            </div>
+        ),
+    },
+    
 ];
