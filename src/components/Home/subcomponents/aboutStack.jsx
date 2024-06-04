@@ -55,7 +55,7 @@ const CARDS = [
             <div className="flex items-center justify-between">
                 <div className="flex flex-col items-start justify-start"><Highlight className="text-sm lg:text-lg">Love to Swim!</Highlight>
                     <p className="text-sm lg:text-base">Member of college swimming team.</p></div>
-                <Image className="rounded-2xll h-20 w-20lg:h-40 lg:w-40" src={swim}/>
+                <Image className="rounded-2xll h-20 w-20 lg:h-40 lg:w-40" src={swim}/>
             </div>
         ),
     },
