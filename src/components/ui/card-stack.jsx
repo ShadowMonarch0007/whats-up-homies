@@ -19,7 +19,7 @@ export const CardStack = ({ items, offset, scaleFactor }) => {
     interval = setInterval(() => {
       setCards((prevCards) => {
         const newArray = [...prevCards]; // create a copy of the array
-        newArray.shift(newArray.pop()); // move the first element to the front
+        newArray.unshift(newArray.pop()); // move the last element to the front
         return newArray;
       });
     }, 5000);
