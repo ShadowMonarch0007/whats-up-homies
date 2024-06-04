@@ -43,7 +43,7 @@ const CARDS = [
         content: (
             <div className="flex items-center justify-between">
                 <div className="flex flex-col items-start justify-start"><Highlight className="text-sm lg:text-lg">St. Xavier&apos;s High School</Highlight>
-                    <p className="text-sm lg:text-base">I have done my matriculation in I.C.S.E Board.</p></div>
+                    <p className="text-xs lg:text-base">I have done my matriculation in I.C.S.E Board.</p></div>
                 <Image className="rounded-2xl h-20 w-20 lg:h-40 lg:w-40" src={sxp}/>
 
             </div>
@@ -54,7 +54,7 @@ const CARDS = [
         content: (
             <div className="flex items-center justify-between">
                 <div className="flex flex-col items-start justify-start"><Highlight className="text-sm lg:text-lg">Love to Swim!</Highlight>
-                    <p className="text-sm lg:text-base">Member of college swimming team.</p></div>
+                    <p className="text-xs lg:text-base">Member of college swimming team.</p></div>
                 <Image className="rounded-2xl h-20 w-20 lg:h-40 lg:w-40" src={swim}/>
             </div>
         ),
