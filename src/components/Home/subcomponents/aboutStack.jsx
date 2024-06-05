@@ -14,7 +14,7 @@ import swim from "@/components/Home/img/swimming.jpg"
 export async function Education() {
     return (
         <div>
-            <div className="w-full h-48 lg:h-80 flex items-center justify-center group hover:translate-x-2.5 transition-all">
+            <div className="w-full h-48 md:h-40 lg:h-80 flex items-center justify-center group hover:translate-x-2.5 transition-all">
                 <div className=" flex flex-col gap-10 items-center justify-around">
                     <CardStack items={CARDS} />
                 </div>
