@@ -11,7 +11,7 @@ export default async function Experience() {
         <div>
             <div className="border-[0.05px] backdrop-blur-[2px] dark:border-[#e0e0e0]/50 border-[#202020]/50 rounded-xl overflow-hidden">
                 <div className="flex group hover:translate-x-2.5 transition-all">
-                    <div className="w-full h-48 lg:h-[480px] flex flex-col gap-1 lg:gap-2 items-start justify-center p-5 lg:p-20 relative z-20">
+                    <div className="w-full h-48 lg:h-[472.5px] flex flex-col gap-1 lg:gap-2 items-start justify-center p-5 lg:p-20 relative z-20">
                         <p className="font-sans font-extralight text-[10px] lg:text-xl text-[#232323] dark:text-[#C1C2D3]">32 Mobiles</p>
                         <h1 className="font-sans text-lg lg:text-4xl max-w-48 lg:max-w-96 font-bold">Currently working as a Front-end SDE Intern</h1>
                     </div>

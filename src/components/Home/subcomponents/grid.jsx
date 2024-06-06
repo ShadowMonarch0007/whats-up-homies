@@ -3,6 +3,7 @@ import TechStack from "./techStack";
 import { Education } from "./aboutStack";
 import Experience from "./expStack";
 import GlobeGrid from "./globeStack";
+import ConnectGrid from "./connectStack";
 
 export default async function Grid() {
     return (
@@ -14,7 +15,7 @@ export default async function Grid() {
                 </div>
                 <div className="md:col-span-2 md:row-span-1 lg:col-span-2 lg:row-span-1"><GlobeGrid/></div>
                 <div className="md:col-span-3 md:row-span-3 lg:col-span-3 lg:row-span-3"><Experience/></div>
-                <div className="md:col-span-2 md:row-span-1 lg:col-span-2 lg:row-span-1"></div>
+                <div className="md:col-span-2 md:row-span-1 lg:col-span-2 lg:row-span-1"><ConnectGrid/></div>
             </div>
         </div>
     );
