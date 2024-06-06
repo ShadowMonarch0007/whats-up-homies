@@ -1,9 +1,4 @@
-{/* <h2 className="text-center text-xl md:text-4xl font-bold text-black dark:text-white">I'm very flexible with time zone communications</h2> */ }
 import React from "react";
-import MagicButton from "@/components/ui/border-button";
-import { FaLocationArrow } from "react-icons/fa6";
-import Image from "next/image";
-import Link from "next/link";
 import { GlobeDemo } from "./globeDemo";
 
 export default async function GlobeGrid() {
@@ -17,7 +12,6 @@ export default async function GlobeGrid() {
                     <div>
                         <GlobeDemo/>
                     </div>
-                    <Link href="./Experience" className="absolute bottom-0 left-0 group-hover:-translate-x-5 transition-all"><MagicButton title={"View All"} icon={<FaLocationArrow />} position={"right"} /></Link>
                 </div>
             </div>
         </div>
