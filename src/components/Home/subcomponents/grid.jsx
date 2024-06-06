@@ -2,6 +2,7 @@ import React from "react";
 import TechStack from "./techStack";
 import { Education } from "./aboutStack";
 import Experience from "./expStack";
+import GlobeGrid from "./globeStack";
 
 export default async function Grid() {
     return (
@@ -11,7 +12,7 @@ export default async function Grid() {
                 <div className="md:col-span-2 md:row-span-2 lg:col-span-2 lg:row-span-2 border-[0.05px] backdrop-blur-[2px] dark:border-[#e0e0e0]/50 border-[#202020]/50 rounded-xl overflow-hidden">
                     <Education/>
                 </div>
-                <div className="md:col-span-2 md:row-span-1 lg:col-span-2 lg:row-span-1"></div>
+                <div className="md:col-span-2 md:row-span-1 lg:col-span-2 lg:row-span-1"><GlobeGrid/></div>
                 <div className="md:col-span-3 md:row-span-3 lg:col-span-3 lg:row-span-3"><Experience/></div>
                 <div className="md:col-span-2 md:row-span-1 lg:col-span-2 lg:row-span-1"></div>
             </div>
