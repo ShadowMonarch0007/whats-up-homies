@@ -30,10 +30,10 @@ export default async function Hero() {
             </div>
             <div className="flex flex-col items-center justify-center my-5 lg:my-7">
                 <div className="lg:w-1/2 ">
-                    <p className="uppercase tracking-widest text-[6px] lg:text-sm text-center text-red-100">
+                    <p className="uppercase tracking-widest text-[6px] lg:text-sm text-center text-red-300">
                         &quot;Design is not just what it looks like and feels like. Design is how it works.&quot;
                     </p>
-                    <p className="uppercase tracking-widest text-[8px] lg:text-xs text-end text-red-100">-Steve Jobs</p>
+                    <p className="uppercase tracking-widest text-[8px] lg:text-xs text-end text-red-300">-Steve Jobs</p>
                 </div>
             </div>
             <div className="flex items-center justify-center">
