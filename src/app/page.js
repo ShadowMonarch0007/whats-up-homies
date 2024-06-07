@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Hambar from "@/components/hambar/hambar";
-import Hero from "@/components/Home/home";
+import HomePage from "@/components/Home/home";
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
         <Hambar />
       </div>
       <div className="p-5 lg:p-10">
-        <Hero/>
+        <HomePage/>
       </div>
     </div>
   );

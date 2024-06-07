@@ -1,11 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import pfp from "@/components/footer/img/pfp.jpg";
 import FollowMe from "./subcomponents/followme";
 import EmailSnppet from "./subcomponents/emailSnippet";
-import { BackgroundGradient } from "@/components/ui/background-gradient";
 import { WavyBackground } from "../ui/wavy-background";
-import { Vortex } from "../ui/vortex";
 
 export default async function Footer() {
     return (
