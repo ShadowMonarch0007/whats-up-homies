@@ -41,7 +41,7 @@ export function ConnectFormDemo() {
                     presence to the next level?
                 </h1>
             </div>
-            <div className="max-w-4xl w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-[#e0e0e0]/50 dark:bg-[#202020]/50 backdrop-blur-[2.5px] border-4 border-[#e0e0e0] dark:border-[#202020]">
+            <div className="max-w-4xl w-full mx-auto rounded-2xl p-4 md:p-8 shadow-input backdrop-blur-[2.5px] border-2 border-[#e0e0e0] dark:border-[#202020]">
                 <h2 className="font-bold text-xl lg:text-2xl text-neutral-800 dark:text-neutral-200">
                     Let&apos;s get in touch
                 </h2>
