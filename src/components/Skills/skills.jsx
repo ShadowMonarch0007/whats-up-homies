@@ -5,6 +5,7 @@ import Cpp from "@/components/Skills/svg/cpp.svg"
 import Java from "@/components/Skills/svg/java.svg"
 import Cl from "@/components/Skills/svg/Clang.svg"
 import Fwd from "@/components/Skills/svg/Fwebdev.svg"
+import FwdL from "@/components/Skills/svg/FwebdevL.svg"
 import HTML from "@/components/Skills/svg/html.svg"
 import CSS from "@/components/Skills/svg/css.svg"
 import JS from "@/components/Skills/svg/javascript.svg"
@@ -33,7 +34,7 @@ export default async function Skills() {
 const CPPCertificate = () => {
     return (
         <div>
-            <Image className="w-[500px] h-[200px] lg:h-[350px]" src={cppcert}/>
+            <Image className="w-[500px] h-[175+px] lg:h-[350px]" src={cppcert}/>
         </div>
     );
 };
@@ -41,14 +42,14 @@ const CPPCertificate = () => {
 const WebDevCertificate = () => {
     return (
         <div>
-            <Image className="w-[500px] h-[200px] lg:h-[350px]" src={WebDev}/>
+            <Image className="w-[500px] h-[175+px] lg:h-[350px]" src={WebDev}/>
         </div>
     );
 };
 const CCertificate = () => {
     return (
         <div>
-            <Image className="w-[500px] h-[200px] lg:h-[350px]" src={ccert}/>
+            <Image className="w-[500px] h-[175+px] lg:h-[350px]" src={ccert}/>
         </div>
     );
 };
@@ -58,43 +59,43 @@ const cards = [
         id: 1,
         content: <CPPCertificate />,
         className: "col-span-1",
-        thumbnail: <div className="backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-2 border-[#e0e0e0] dark:border-[#202020]"><Image className="h-full w-full" src={Cpp} /></div>
+        thumbnail: <div className="h-20 lg:h-60 flex justify-evenly items-center  backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-2 border-[#e0e0e0] dark:border-[#202020]"><div><Image className="h-full w-16 lg:w-56" src={Cpp} /></div></div>
     },
     {
         id: 2,
         content: <WebDevCertificate />,
         className: "col-span-1",
-        thumbnail: <div className="backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-2 border-[#e0e0e0] dark:border-[#202020]"><Image className="h-full w-full" src={Java} /></div>
+        thumbnail: <div className="h-20 lg:h-60 flex justify-evenly items-center  backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-2 border-[#e0e0e0] dark:border-[#202020]"><div><Image className="h-full w-16 lg:w-56" src={Java} /></div></div>
     },
     {
         id: 3,
         content: <WebDevCertificate />,
         className: "col-span-2 row-span-2 ",
-        thumbnail: <div className="backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-2 border-[#e0e0e0] dark:border-[#202020]"><Image className="h-full w-full" src={Fwd} /></div>
+        thumbnail: <div className="h-[180px] lg:h-[520px] flex justify-evenly items-center backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-2 border-[#e0e0e0] dark:border-[#202020]"><div><Image className="h-full w-44 lg:w-[500px] hidden dark:block" src={Fwd} /><Image className="h-full w-44 lg:w-[500px] dark:hidden" src={FwdL} /></div></div>
     },
     {
         id: 4,
         content: <WebDevCertificate />,
         className: "col-span-1",
-        thumbnail: <div className="backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-2 border-[#e0e0e0] dark:border-[#202020]"><Image className="h-full w-full" src={HTML} /></div>
+        thumbnail: <div className="h-20 lg:h-60 flex justify-evenly items-center  backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-2 border-[#e0e0e0] dark:border-[#202020]"><div><Image className="h-full w-16 lg:w-56" src={Cpp} /></div></div>
     },
     {
         id: 5,
         content: <CCertificate />,
         className: "col-span-1",
-        thumbnail: <div className="backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-2 border-[#e0e0e0] dark:border-[#202020]"><Image className="h-full w-full" src={Cl} /></div>
+        thumbnail: <div className="h-20 lg:h-60 flex justify-evenly items-center  backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-2 border-[#e0e0e0] dark:border-[#202020]"><div><Image className="h-full w-16 lg:w-56" src={Cl} /></div></div>
     },
     {
         id: 6,
         content: <WebDevCertificate />,
         className: "col-span-3",
-        thumbnail: <div className="flex gap-5 lg:gap-24 justify-center items-center backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-2 border-[#e0e0e0] dark:border-[#202020]"><Image className="h-full w-1/4" src={HTML} /><Image className="h-full w-1/4" src={CSS} /><Image className="h-full w-1/4" src={JS} /></div>
+        thumbnail: <div className="h-20 lg:h-60 flex justify-evenly items-center backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-2 border-[#e0e0e0] dark:border-[#202020]"><div><Image className="h-full w-16 lg:w-56" src={HTML} /></div><div><Image className="h-full w-16 lg:w-56" src={CSS} /></div><div><Image className="h-full w-16 lg:w-56" src={JS} /></div></div>
     },
     {
         id: 7,
         content: <WebDevCertificate />,
         className: "col-span-1",
-        thumbnail: <div className="backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-2 border-[#e0e0e0] dark:border-[#202020]"><Image className="h-full w-full" src={BS} /></div>
+        thumbnail: <div className="h-20 lg:h-60 flex justify-evenly items-center backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-2 border-[#e0e0e0] dark:border-[#202020]"><div><Image className="h-full w-16 lg:w-56" src={BS} /></div></div>
     },
     {
         id: 8,
