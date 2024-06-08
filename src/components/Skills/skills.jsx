@@ -33,23 +33,23 @@ export default async function Skills() {
 
 const CPPCertificate = () => {
     return (
-        <div>
-            <Image className="w-[500px] h-[175+px] lg:h-[350px]" src={cppcert}/>
+        <div className="w-screen h-screen bg-transparent flex items-center justify-center">
+            <Image className="w-[300px] lg:w-[800px] h-[210px] lg:h-[560px]" src={cppcert}/>
         </div>
     );
 };
 
 const WebDevCertificate = () => {
     return (
-        <div>
-            <Image className="w-[500px] h-[175+px] lg:h-[350px]" src={WebDev}/>
+        <div className="w-screen h-screen bg-transparent flex items-center justify-center">
+            <Image className="w-[300px] lg:w-[800px] h-[210px] lg:h-[560px]" src={WebDev}/>
         </div>
     );
 };
 const CCertificate = () => {
     return (
-        <div>
-            <Image className="w-[500px] h-[175+px] lg:h-[350px]" src={ccert}/>
+        <div className="w-screen h-screen bg-transparent flex items-center justify-center">
+            <Image className="w-[300px] lg:w-[800px] h-[210px] lg:h-[560px]" src={ccert}/>
         </div>
     );
 };

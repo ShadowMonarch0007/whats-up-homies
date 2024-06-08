@@ -39,7 +39,7 @@ const LayoutGrid = ({ cards }) => {
               card.className,
               "relative overflow-hidden",
               selected?.id === card.id
-                ? "selected-card rounded-lg cursor-pointer fixed inset-0 h-1/2 w-3/4 m-auto z-50 flex justify-center items-center flex-wrap"
+                ? "selected-card rounded-lg cursor-pointer fixed inset-0 h-screen w-screen backdrop-blur-lg z-50 flex justify-center items-center flex-wrap"
                 : lastSelected?.id === card.id
                 ? "z-40 bg-transparent rounded-xl lg:rounded-3xl h-full w-full"
                 : "bg-transparent rounded-xl lg:rounded-3xl h-full w-full"
@@ -53,7 +53,7 @@ const LayoutGrid = ({ cards }) => {
       ))}
       <motion.div
         className={cn(
-          "absolute h-full w-full left-0 top-0 bg-black opacity-0 z-10",
+          "absolute h-full w-full left-0 top-0 z-10",
           selected?.id ? "pointer-events-auto" : "pointer-events-none"
         )}
         animate={{ opacity: selected?.id ? 0.3 : 0 }}
@@ -80,7 +80,7 @@ const SelectedCard = ({ selected }) => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3, ease: "easeInOut" }}
-        className="relative h-1/2 w-full md:h-[405px] md:w-[540px] lg:h-[450px] lg:w-[600px] items-center justify-center px-8 pb-4 z-[70]"
+        className="relative h-full w-full items-center justify-center z-[70]"
       >
         {selected?.content}
       </motion.div>
