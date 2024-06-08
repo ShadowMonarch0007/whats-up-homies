@@ -33,7 +33,7 @@ export default async function Skills() {
 const CPPCertificate = () => {
     return (
         <div>
-            <Image className="w-[500px] h-[350px]" src={cppcert}/>
+            <Image className="w-[500px] h-[200px] lg:h-[350px]" src={cppcert}/>
         </div>
     );
 };
@@ -41,14 +41,14 @@ const CPPCertificate = () => {
 const WebDevCertificate = () => {
     return (
         <div>
-            <Image className="w-[500px] h-[350px]" src={WebDev}/>
+            <Image className="w-[500px] h-[200px] lg:h-[350px]" src={WebDev}/>
         </div>
     );
 };
 const CCertificate = () => {
     return (
         <div>
-            <Image className="w-[500px] h-[350px]" src={ccert}/>
+            <Image className="w-[500px] h-[200px] lg:h-[350px]" src={ccert}/>
         </div>
     );
 };
