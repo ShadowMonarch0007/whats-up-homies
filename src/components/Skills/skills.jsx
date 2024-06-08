@@ -15,8 +15,10 @@ import NextJSL from "@/components/Skills/svg/next-js-light.svg"
 import ReactJS from "@/components/Skills/svg/react.svg"
 import Tcss from "@/components/Skills/svg/tailwind.svg"
 import FM from "@/components/Skills/svg/framer-motion.svg"
-import Aui from "@/components/Skills/svg/acerternity.svg"
+import Aui from "@/components/Skills/svg/acerternity.png"
+import AuiD from "@/components/Skills/svg/acerternityD.png"
 import Chart from "@/components/Skills/svg/chartjs.svg"
+import ChartL from "@/components/Skills/svg/chartjsL.svg"
 import WebDev from "@/components/Skills/img/WebDev.jpg"
 import cppcert from "@/components/Skills/img/c++.jpg"
 import ccert from "@/components/Skills/img/c.jpg"
@@ -113,7 +115,7 @@ const cards = [
         id: 10,
         content: <WebDevCertificate />,
         className: "row-span-2 col-span-1",
-        thumbnail: <div className="h-[180px] lg:h-[520px] flex flex-col justify-evenly items-center backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-1 lg:border-2 border-[#e0e0e0] dark:border-[#202020] hover:cursor-pointer"><div><Image className="h-full w-16 lg:w-56" src={Aui} /></div><div><Image className="h-full w-16 lg:w-56" src={Chart} /></div></div>
+        thumbnail: <div className="h-[180px] lg:h-[520px] flex flex-col justify-evenly items-center backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-1 lg:border-2 border-[#e0e0e0] dark:border-[#202020] hover:cursor-pointer"><div><Image className="h-full w-12 lg:w-44 hidden dark:block" src={AuiD} /><Image className="h-full w-12 lg:w-44 dark:hidden" src={Aui} /></div><div><Image className="h-full w-12 lg:w-44 hidden dark:block" src={Chart} /><Image className="h-full w-12 lg:w-44 dark:hidden" src={ChartL} /></div></div>
     },
     // {
     //     id: 11,
