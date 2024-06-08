@@ -83,7 +83,7 @@ const cards = [
         id: 5,
         content: <CCertificate />,
         className: "col-span-1",
-        thumbnail: <div className="h-20 lg:h-60 flex justify-evenly items-center  backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-1 lg:border-2 border-[#e0e0e0] dark:border-[#202020] hover:cursor-pointer"><div><Image className="h-full w-16 lg:w-56" src={Cl} /></div></div>
+        thumbnail: <div className="h-20 lg:h-60 flex justify-evenly items-center  backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-1 lg:border-2 border-[#e0e0e0] dark:border-[#202020] hover:cursor-pointer"><div><Image className="h-full w-12 lg:w-44" src={Cl} /></div></div>
     },
     {
         id: 6,
