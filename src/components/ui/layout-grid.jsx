@@ -26,6 +26,14 @@ const LayoutGrid = ({ cards }) => {
     };
   }, [selected]);
 
+  useEffect(() => {
+    if (selected) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [selected]);
+
   return (
     <div className="w-full h-full lg:px-32 grid grid-cols-4 m-auto gap-5 lg:gap-10 relative">
       {cards.map((card, i) => (
@@ -63,9 +71,7 @@ const LayoutGrid = ({ cards }) => {
 };
 
 const BlurImage = ({ card }) => {
-  return (
-    <div>{card.thumbnail}</div>
-  );
+  return <div>{card.thumbnail}</div>;
 };
 
 const SelectedCard = ({ selected }) => {
