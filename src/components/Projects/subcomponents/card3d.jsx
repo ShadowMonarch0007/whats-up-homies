@@ -4,6 +4,7 @@ import React from "react";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 import Link from "next/link";
+import { SquareArrowOutUpRightIcon } from "lucide-react";
 
 export function ThreeDCardDemo({ img, title, note, link, people }) {
   return (
@@ -11,7 +12,7 @@ export function ThreeDCardDemo({ img, title, note, link, people }) {
       <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto h-auto rounded-xl p-6 border-2">
         <CardItem
           translateZ="50"
-          className="text-xl font-bold text-neutral-600 dark:text-white"
+          className="text-xl font-bold text-neutral-600 dark:text-neutral-300"
         >
           {title}
         </CardItem>
@@ -36,9 +37,9 @@ export function ThreeDCardDemo({ img, title, note, link, people }) {
             translateZ={20}
             as={Link}
             href={link}
-            className="px-4 py-2 rounded-xl text-sm flex items-center font-normal dark:text-white"
+            className="py-2 rounded-xl text-base lg:text-xl flex items-center font-semibold text-neutral-600 dark:text-neutral-300"
           >
-            Check Live Site →
+            Check Live Site &ensp; <SquareArrowOutUpRightIcon/>
           </CardItem>
           <CardItem
             translateZ={20}
