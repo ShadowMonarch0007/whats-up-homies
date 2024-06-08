@@ -26,7 +26,7 @@ export default async function Hero() {
             <div className="text-base md:xl lg:text-3xl text-center font-normal text-neutral-600 dark:text-neutral-400">
                 I&apos;m
                 <FlipWords words={words} />
-                dedicated to delivering examplary work.
+                dedicated to delivering exemplary work.
             </div>
             <div className="flex flex-col items-center justify-center my-5 lg:my-7">
                 <div className="lg:w-1/2 ">
