@@ -3,6 +3,8 @@ import Image from "next/image";
 import LayoutGrid from "../ui/layout-grid";
 import Cpp from "@/components/Skills/svg/cpp.svg"
 import Java from "@/components/Skills/svg/java.svg"
+import dsa from "@/components/Skills/svg/dsa.png"
+import dsaL from "@/components/Skills/svg/dsaL.png"
 import Cl from "@/components/Skills/svg/Clang.svg"
 import Fwd from "@/components/Skills/svg/Fwebdev.svg"
 import FwdL from "@/components/Skills/svg/FwebdevL.svg"
@@ -79,7 +81,7 @@ const cards = [
         id: 4,
         content: <WebDevCertificate />,
         className: "col-span-1",
-        thumbnail: <div className="h-20 lg:h-60 flex justify-evenly items-center  backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-1 lg:border-2 border-[#e0e0e0] dark:border-[#202020] hover:cursor-pointer"><div><Image className="h-full w-16 lg:w-56" src={Cpp} /></div></div>
+        thumbnail: <div className="h-20 lg:h-60 flex justify-evenly items-center  backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-1 lg:border-2 border-[#e0e0e0] dark:border-[#202020] hover:cursor-pointer"><div><Image className="h-full w-44 lg:w-[500px] hidden dark:block" src={dsa} /><Image className="h-full w-44 lg:w-[500px] dark:hidden" src={dsaL} /></div></div>
     },
     {
         id: 5,
