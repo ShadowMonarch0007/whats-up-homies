@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Label } from "@/components/ui/label";
-import { Input } from "@/components/ui/input";
+import { Input,Textarea } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 import {
     IconBrandGithub,
@@ -18,6 +18,7 @@ const schema = z.object({
     lastname: z.string().min(1, "Last name is required"),
     phone: z.string().min(1, "Phone number is required").regex(/^(\+?\d{1,2}[\s-]?)?\d{10}$/, "Phone number must be 10 digits"),
     email: z.string().email("Invalid email address"),
+    help: z.string().min(1, "This field is required"),
 });
 
 export function ConnectFormDemo() {
@@ -71,6 +72,11 @@ export function ConnectFormDemo() {
                         <Label htmlFor="email">Email Address</Label>
                         <Input id="email" placeholder="aditya.anil.chandra@gmail.com" type="email" {...register("email")} />
                         {errors.email && <p className="text-red-500 text-sm">{errors.email.message}</p>}
+                    </LabelInputContainer>
+                    <LabelInputContainer className="mb-4">
+                        <Label htmlFor="email">How can I help you?</Label>
+                        <Textarea id="help" placeholder="Enter" type="text" {...register("help")} />
+                        {errors.help && <p className="text-red-500 text-sm">{errors.help.message}</p>}
                     </LabelInputContainer>
 
                     <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" />

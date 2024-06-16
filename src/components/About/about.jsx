@@ -16,7 +16,7 @@ export default async function Abouts() {
       text: ":",
     },
     {
-      text: "Place",
+      text: "Places",
     },
     {
       text: "where",
@@ -37,16 +37,13 @@ export default async function Abouts() {
       text: ":",
     },
     {
-      text: "Stuff",
+      text: "Life",
     },
     {
-      text: "which",
+      text: "beyond",
     },
     {
-      text: "I",
-    },
-    {
-      text: "Enjoy",
+      text: "screen",
     },
   ];
   return (
@@ -55,15 +52,15 @@ export default async function Abouts() {
         <TypewriterEffectSmooth words={Education} />
       </div>
       <div className="flex flex-wrap lg:flex-nowrap xl:flex-nowrap 2xl:flex-nowrap gap-20 items-center justify-center">
-        <AnimatedPinDemo title={"stxavierspatna.in"} nlink={"https://www.stxavierspatna.in/"} name={"St. Xavier's High SChool"} description={"I have done my matriculation in I.C.S.E Board."} Logo={sxp} />
-        <AnimatedPinDemo title={"baldwinsociety.in/patna"} nlink={"https://www.baldwinsociety.in/patna"} name={"Baldwin Academy"} description={"I have done my intermediate in C.B.S.E Board."} Logo={ba} />
         <AnimatedPinDemo title={"nitrkl.ac.in"} nlink={"https://www.nitrkl.ac.in/"} name={"NIT Rourkela"} description={"I am a Pre-Final Year student pursuing my B.Tech Degree."} Logo={nitrkl} />
+        <AnimatedPinDemo title={"stxavierspatna.in"} nlink={"https://www.stxavierspatna.in/"} name={"St. Xavier's High School"} description={"I have done my matriculation in I.C.S.E Board."} Logo={sxp} />
+        <AnimatedPinDemo title={"baldwinsociety.in/patna"} nlink={"https://www.baldwinsociety.in/patna"} name={"Baldwin Academy"} description={"I have done my intermediate in C.B.S.E Board."} Logo={ba} />
       </div>
       <div className="mt-20 mb-10 flex items-center justify-center">
         <TypewriterEffectSmooth words={Hobbies} />
       </div>
       <div>
-        <Grid/>
+        <Grid />
       </div>
     </div>
   );

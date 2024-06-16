@@ -21,7 +21,7 @@ export default async function TechStack(){
                                 <span class="h-9 w-20 lg:h-16 lg:w-40 text-[8px] lg:text-base rounded-lg flex items-center justify-center bg-[#e0e0e0] dark:bg-[#202020] text-[#202020] dark:text-[#e0e0e0]">DSA</span>
                                 <span class="h-9 w-20 lg:h-16 lg:w-40 text-[8px] lg:text-base rounded-lg flex items-center justify-center bg-[#e0e0e0] dark:bg-[#202020] text-[#202020] dark:text-[#e0e0e0]">Web Dev</span>
                             </div>
-                            <div class="flex flex-col gap-3 md:gap-3 lg:gap-8 mt-10 lg:mt-20">
+                            <div class="flex flex-col gap-3 md:gap-3 lg:gap-8 mt-12 lg:mt-24">
                                 <span class="h-9 w-20 lg:h-16 lg:w-40 text-[8px] lg:text-base rounded-lg flex items-center justify-center bg-[#e0e0e0] dark:bg-[#202020] text-[#202020] dark:text-[#e0e0e0]">ReactJS</span>
                                 <span class="h-9 w-20 lg:h-16 lg:w-40 text-[8px] lg:text-base rounded-lg flex items-center justify-center bg-[#e0e0e0] dark:bg-[#202020] text-[#202020] dark:text-[#e0e0e0]">NextJS</span>
                                 <span class="h-9 w-20 lg:h-16 lg:w-40 text-[8px] lg:text-base rounded-lg flex items-center justify-center bg-[#e0e0e0] dark:bg-[#202020] text-[#202020] dark:text-[#e0e0e0]">Tailwind CSS</span>

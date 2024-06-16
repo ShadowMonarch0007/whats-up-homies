@@ -1,11 +1,11 @@
 import React from "react";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import Image from "next/image";
-import Swim from "@/components/About/img/Swimming.avif"
+import Swim from "@/components/About/img/swim.gif"
 import Code1 from "@/components/About/img/coding.jpg"
 import Code2 from "@/components/About/img/coding2.jpg"
 import Sing from "@/components/About/img/singing.jpg"
-import Cook from "@/components/About/img/cooking.jpg"
+import Cook from "@/components/About/img/cooking.gif"
 import Anime from "@/components/About/img/anime.gif"
 
 export default function BentoGridDemo() {
@@ -32,7 +32,7 @@ const items = [
   {
     title: "Love to Swim!",
     description: "Member of college swimming team.",
-    img: <Image className="w-full rounded-xl" src={Swim}/>,    
+    img: <Image className="w-full h-48 rounded-xl" src={Swim}/>,    
   },
   {
     title: "Coding is Life!",
@@ -48,11 +48,11 @@ const items = [
     title: "Anime Nerd",
     description:
       "Anime and Manga keeps me sane.",
-    img: <div><Image className="w-full rounded-xl" src={Anime}/></div> ,    
+    img: <div><Image className="w-full h-48 rounded-xl" src={Anime}/></div> ,    
   },
   {
     title: "Cook sometimes!",
     description: "To fulfill my cravings.",
-    img: <Image className="w-full rounded-xl" src={Cook}/>,    
+    img: <Image className="w-full h-48 rounded-xl" src={Cook}/>,    
   },
 ];
