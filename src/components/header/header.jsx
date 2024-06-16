@@ -3,7 +3,8 @@ import React from "react";
 import Image from "next/image";
 import ThemeButton from "./subcomponents/themeButton";
 import Link from "next/link";
-import logo from '@/components/header/svg/adityalogo.svg'
+import logo from '@/components/header/svg/lgd.png'
+import logoL from '@/components/header/svg/lglight.png'
 import Navbar from "../navbar/navbar";
 
 export default async function Headers() {
@@ -14,7 +15,8 @@ export default async function Headers() {
             </div>
             <Link href="./">
                 <div>
-                    <Image className="dark:bg-white rounded-lg" src={logo} height={48} width={48} />
+                    <Image className="h-12 w-12 hidden dark:block" src={logo} />
+                    <Image className="h-12 w-12 dark:hidden" src={logoL} />
                 </div>
             </Link>
             <div><Navbar /></div>
