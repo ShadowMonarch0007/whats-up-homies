@@ -41,7 +41,7 @@ const items = [
   },
   {
     title: "Next in line are my vocals!",
-    description: "A decent Singer.",
+    description: "More than a bathroom singer.",
     img: <Image className="w-full rounded-xl" src={Sing}/>,    
   },
   {
@@ -52,7 +52,7 @@ const items = [
   },
   {
     title: "Cook sometimes!",
-    description: "To fulfill my cravings.",
+    description: "Wannabe Masterchef.",
     img: <Image className="w-full h-48 rounded-xl" src={Cook}/>,    
   },
 ];

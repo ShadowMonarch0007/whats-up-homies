@@ -54,23 +54,23 @@ export function ConnectFormDemo() {
                     <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
                         <LabelInputContainer>
                             <Label htmlFor="firstname">First name</Label>
-                            <Input id="firstname" placeholder="Aditya" type="text" {...register("firstname")} />
+                            <Input id="firstname" placeholder="Enter your First Name" type="text" {...register("firstname")} />
                             {errors.firstname && <p className="text-red-500 text-sm">{errors.firstname.message}</p>}
                         </LabelInputContainer>
                         <LabelInputContainer>
                             <Label htmlFor="lastname">Last name</Label>
-                            <Input id="lastname" placeholder="Chandra" type="text" {...register("lastname")} />
+                            <Input id="lastname" placeholder="Enter your Last Name" type="text" {...register("lastname")} />
                             {errors.lastname && <p className="text-red-500 text-sm">{errors.lastname.message}</p>}
                         </LabelInputContainer>
                     </div>
                     <LabelInputContainer className="mb-4">
                         <Label htmlFor="phone">Phone Number</Label>
-                        <Input id="phone" placeholder="+91 0000000000" type="text" {...register("phone")} />
+                        <Input id="phone" placeholder="Enter your Phone Number" type="text" {...register("phone")} />
                         {errors.phone && <p className="text-red-500 text-sm">{errors.phone.message}</p>}
                     </LabelInputContainer>
                     <LabelInputContainer className="mb-4">
                         <Label htmlFor="email">Email Address</Label>
-                        <Input id="email" placeholder="aditya.anil.chandra@gmail.com" type="email" {...register("email")} />
+                        <Input id="email" placeholder="Enter your Email" type="email" {...register("email")} />
                         {errors.email && <p className="text-red-500 text-sm">{errors.email.message}</p>}
                     </LabelInputContainer>
                     <LabelInputContainer className="mb-4">
