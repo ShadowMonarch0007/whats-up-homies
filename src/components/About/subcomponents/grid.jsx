@@ -2,7 +2,7 @@ import React from "react";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import Image from "next/image";
 import Swim from "@/components/About/img/swim.gif"
-import Code1 from "@/components/About/img/coding.jpg"
+import Code1 from "@/components/About/img/code.gif"
 import Code2 from "@/components/About/img/coding2.jpg"
 import Sing from "@/components/About/img/singing.jpg"
 import Cook from "@/components/About/img/cooking.gif"
@@ -37,7 +37,7 @@ const items = [
   {
     title: "Coding is Life!",
     description: "Developing websites nowadays.",
-    img: <div><Image className="w-full lg:hidden md:hidden xl:hidden 2xl:hidden rounded-xl" src={Code1}/><Image className="w-full hidden lg:block md:block xl:block 2xl:block rounded-xl" src={Code2}/></div> ,    
+    img: <div><Image className="w-full h-48 lg:hidden md:hidden xl:hidden 2xl:hidden rounded-xl" src={Code1}/><Image className="w-full h-48 hidden lg:block md:block xl:block 2xl:block rounded-xl" src={Code1}/></div> ,    
   },
   {
     title: "Next in line are my vocals!",

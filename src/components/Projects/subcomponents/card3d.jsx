@@ -26,8 +26,6 @@ export function ThreeDCardDemo({ img, title, note, link, people }) {
         <CardItem translateZ="100" className="w-full h-full mt-4">
           <Image
             src={img}
-            height="1000"
-            width="1000"
             className="h-52 w-full object-cover rounded-xl group-hover/card:shadow-xl"
             alt="thumbnail"
           />
