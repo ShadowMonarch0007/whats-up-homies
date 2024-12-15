@@ -84,7 +84,6 @@ export function ConnectFormDemo() {
                 </p>
 
                 <form className="my-8" onSubmit={(e) => {
-                    e.preventDefault();
                     handleSubmit(onSubmit)(e);
                 }}>
                     <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">

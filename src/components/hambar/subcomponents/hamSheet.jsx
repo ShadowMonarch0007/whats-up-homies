@@ -1,5 +1,6 @@
 import React from "react";
-import Logo from "@/components/header/svg/adityalogo.svg"
+import logo from '@/components/header/svg/lgd.png'
+import logoL from '@/components/header/svg/lglight.png'
 import Image from "next/image";
 import {
     Sheet,
@@ -22,7 +23,10 @@ export default async function HamSheet() {
                 </SheetTrigger>
                 <SheetContent>
                     <SheetHeader>
-                        <SheetTitle><Image className="-translate-y-2.5 dark:bg-white" src={Logo} height={48} width={48} /></SheetTitle>
+                        <SheetTitle><div className="-translate-y-2.5">
+                            <Image className="h-12 w-12 hidden dark:block" src={logo} />
+                            <Image className="h-12 w-12 dark:hidden" src={logoL} />
+                        </div></SheetTitle>
                         <SheetDescription className="pt-5 flex flex-col gap-4">
                             <Link href="./"><Button className="w-[90%] text-lg flex dark:text-white text-[#202020] justify-between bg-gradient-to-r from-[#303030]/50 to-[#ffffff]/50 dark:from-[#ffffff]/50 dark:to-[#303030]/50 backdrop-blur-lg bg-clip-padding backdrop-filter " variant="outline ">Home <ChevronDown /> </Button></Link>
                             <Link href="./About"><Button className=" w-[90%] text-lg flex dark:text-white text-[#202020] justify-between bg-gradient-to-r from-[#303030]/50 to-[#ffffff]/50 dark:from-[#ffffff]/50 dark:to-[#303030]/50 backdrop-blur-lg bg-clip-padding backdrop-filter " variant="outline ">About <ChevronDown /> </Button></Link>
