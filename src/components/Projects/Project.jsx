@@ -24,7 +24,7 @@ import VJS from "@/components/Projects/img/Vitejs.png"
 import Gsap from "@/components/Projects/img/gsap.png"
 import EJS from "@/components/Projects/img/express.png"
 import appwrite from "@/components/Projects/img/appwrite.png"
-import chart from "@/components/Projects/img/chart-js.png"
+import ts from "@/components/Projects/img/typescript.png"
 
 export default async function Projects(){
     return(
@@ -104,8 +104,8 @@ const Portfolio_Old = [
     },
     {
       id: 4,
-      name: "Chart JS",
-      image: chart,
+      name: "Typescript",
+      image: ts,
     },
   ];
   const JARVIS = [
