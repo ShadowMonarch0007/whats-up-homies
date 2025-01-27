@@ -16,7 +16,7 @@ import NextJS from "@/components/Skills/svg/next-js.svg"
 import NextJSL from "@/components/Skills/svg/next-js-light.svg"
 import ReactJS from "@/components/Skills/svg/react.svg"
 import Tcss from "@/components/Skills/svg/tailwind.svg"
-import FM from "@/components/Skills/svg/framer-motion.svg"
+import FM from "@/components/Skills/svg/motion.png"
 import Aui from "@/components/Skills/svg/acerternity.png"
 import AuiD from "@/components/Skills/svg/acerternityD.png"
 import Chart from "@/components/Skills/svg/chartjs.svg"
@@ -24,6 +24,15 @@ import ChartL from "@/components/Skills/svg/chartjsL.svg"
 import WebDev from "@/components/Skills/img/WebDev.jpg"
 import cppcert from "@/components/Skills/img/c++.jpg"
 import ccert from "@/components/Skills/img/c.jpg"
+import ts from "@/components/Skills/svg/typescript.svg"
+import mdb from "@/components/Skills/svg/mongodb.svg"
+import express from "@/components/Skills/svg/express.svg"
+import expressb from "@/components/Skills/svg/expressb.svg"
+import node from "@/components/Skills/svg/node.svg"
+import vite from "@/components/Skills/svg/vitejs.svg"
+import appwrite from "@/components/Skills/svg/appwrite.svg"
+import javacert from "@/components/Skills/img/JavaCertificate.jpg"
+import gsap from "@/components/Skills/svg/gsap.png"
 
 export default async function Skills() {
     return (
@@ -38,7 +47,7 @@ export default async function Skills() {
 const CPPCertificate = () => {
     return (
         <div className="w-screen h-screen bg-transparent flex items-center justify-center">
-            <Image className="w-[300px] lg:w-[800px] h-[210px] lg:h-[560px]" src={cppcert}/>
+            <Image className="w-[300px] lg:w-[800px] h-[210px] lg:h-[560px]" src={cppcert} />
         </div>
     );
 };
@@ -46,14 +55,21 @@ const CPPCertificate = () => {
 const WebDevCertificate = () => {
     return (
         <div className="w-screen h-screen bg-transparent flex items-center justify-center">
-            <Image className="w-[300px] lg:w-[800px] h-[210px] lg:h-[560px]" src={WebDev}/>
+            <Image className="w-[300px] lg:w-[800px] h-[210px] lg:h-[560px]" src={WebDev} />
         </div>
     );
 };
 const CCertificate = () => {
     return (
         <div className="w-screen h-screen bg-transparent flex items-center justify-center">
-            <Image className="w-[300px] lg:w-[800px] h-[210px] lg:h-[560px]" src={ccert}/>
+            <Image className="w-[300px] lg:w-[800px] h-[210px] lg:h-[560px]" src={ccert} />
+        </div>
+    );
+};
+const JavaCertificate = () => {
+    return (
+        <div className="w-screen h-screen bg-transparent flex items-center justify-center">
+            <Image className="w-[300px] lg:w-[800px] h-[210px] lg:h-[560px]" src={javacert} />
         </div>
     );
 };
@@ -61,83 +77,208 @@ const CCertificate = () => {
 const cards = [
     {
         id: 1,
-        content: <CPPCertificate />,
+        content: <CCertificate />,
         className: "col-span-1",
-        thumbnail: <div className="h-20 lg:h-60 flex justify-evenly items-center  backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-1 lg:border-2 border-[#e0e0e0] dark:border-[#202020] hover:cursor-pointer"><div><Image className="h-full w-16 lg:w-56" src={Cpp} /></div></div>
+        thumbnail: <div className="h-20 md:h-60 flex flex-col justify-around items-center  backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-1 md:border-2 border-[#e0e0e0] dark:border-[#202020] cursor-pointer p-2 md:p-0 md:py-5 md:px-8">
+            <div className="flex items-center w-full gap-0.5">
+                <Image className=" h-full w-8 md:w-24" src={Cl} />
+                <h1 className="text-gray-700 dark:text-gray-500 sirin-stencil-regular text-[8px] md:text-4xl font-bold">C</h1>
+            </div>
+            <div className="w-full flex flex-col items-start justify-center">
+                <p className="text-[0.29rem] md:text-base text-gray-500 dark:text-gray-600 font-medium">Lorem ipsum dolor sit.</p>
+                <p className="text-[0.29rem] md:text-base text-gray-500 dark:text-gray-600 font-medium">Lorem ipsum dolor sit amet.</p>
+                <p className="text-[0.29rem] md:text-base text-gray-500 dark:text-gray-600 font-medium">Lorem, ipsum dolor.</p>
+            </div>
+        </div>
     },
     {
         id: 2,
-        content: <WebDevCertificate />,
+        content: <CPPCertificate />,
         className: "col-span-1",
-        thumbnail: <div className="h-20 lg:h-60 flex justify-evenly items-center  backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-1 lg:border-2 border-[#e0e0e0] dark:border-[#202020] hover:cursor-pointer"><div><Image className="h-full w-16 lg:w-56" src={Java} /></div></div>
+        thumbnail: <div className="h-20 md:h-60 flex flex-col justify-around items-center  backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-1 md:border-2 border-[#e0e0e0] dark:border-[#202020] cursor-pointer p-2 md:p-0 md:py-5 md:px-8">
+            <div className="flex items-center w-full gap-0.5">
+                <Image className=" h-full w-8 md:w-24" src={Cpp} />
+                <h1 className="text-gray-700 dark:text-gray-500 sirin-stencil-regular text-[8px] md:text-4xl font-bold">C++</h1>
+            </div>
+            <div className="w-full flex flex-col items-start justify-center">
+                <p className="text-[0.29rem] md:text-base text-gray-500 dark:text-gray-600 font-medium">Lorem ipsum dolor sit.</p>
+                <p className="text-[0.29rem] md:text-base text-gray-500 dark:text-gray-600 font-medium">Lorem ipsum dolor sit amet.</p>
+                <p className="text-[0.29rem] md:text-base text-gray-500 dark:text-gray-600 font-medium">Lorem, ipsum dolor.</p>
+            </div>
+        </div>
     },
     {
         id: 3,
         content: <WebDevCertificate />,
         className: "col-span-2 row-span-2 ",
-        thumbnail: <div className="h-[180px] lg:h-[520px] flex justify-evenly items-center backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-1 lg:border-2 border-[#e0e0e0] dark:border-[#202020] hover:cursor-pointer"><div><Image className="h-full w-44 lg:w-[500px] hidden dark:block" src={Fwd} /><Image className="h-full w-44 lg:w-[500px] dark:hidden" src={FwdL} /></div></div>
+        thumbnail: <div className="h-[180px] md:h-[520px] flex justify-around items-center backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-1 md:border-2 border-[#e0e0e0] dark:border-[#202020] cursor-pointer p-2 md:p-0 md:py-5 md:px-8">
+            <div className="flex flex-col items-start justify-around gap-3 md:gap-10">
+                <div className="text-gray-700 dark:text-gray-500 sirin-stencil-regular font-bold text-lg md:text-5xl text-start w-full">Web Development</div>
+                <div className="flex items-center justify-between w-full">
+                    <Image className="h-full w-8 md:w-24" src={HTML} />
+                    <Image className="h-full w-8 md:w-24" src={CSS} />
+                    <Image className="h-full w-8 md:w-24" src={JS} />
+                    <Image className="h-full w-8 md:w-24 p-0.5 md:p-1.5" src={ts} />
+                </div>
+                <div className="flex flex-col w-full items-start justify-start">
+                    <p className="text-[0.29rem] md:text-base text-gray-500 dark:text-gray-600 font-normal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi nam officiis libero dignissimos assumenda impedit autem sint consectetur nobis dolor? sit.</p>
+                    <p className="text-[0.29rem] md:text-base text-gray-500 dark:text-gray-600 font-normal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi nam officiis libero dignissimos assumenda impedit autem sint consectetur nobis dolor? sit amet.</p>
+                    <p className="text-[0.29rem] md:text-base text-gray-500 dark:text-gray-600 font-normal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi nam officiis libero dignissimos assumenda impedit autem sint consectetur nobis dolor? .</p>
+                </div>
+            </div>
+        </div>
     },
     {
         id: 4,
-        content: <WebDevCertificate />,
+        content: <JavaCertificate />,
         className: "col-span-1",
-        thumbnail: <div className="h-20 lg:h-60 flex justify-evenly items-center  backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-1 lg:border-2 border-[#e0e0e0] dark:border-[#202020] hover:cursor-pointer"><div><Image className="h-full w-16 lg:w-56 hidden dark:block" src={dsa} /><Image className="h-full w-16 lg:w-56 dark:hidden" src={dsaL} /></div></div>
+        thumbnail: <div className="h-20 md:h-60 flex flex-col justify-around items-center  backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-1 md:border-2 border-[#e0e0e0] dark:border-[#202020] cursor-pointer p-2 md:p-0 md:py-5 md:px-8">
+            <div className="flex items-center w-full gap-0.5">
+                <Image className=" h-full w-8 md:w-24" src={Java} />
+                <h1 className="text-gray-700 dark:text-gray-500 sirin-stencil-regular text-[8px] md:text-4xl font-bold">Java</h1>
+            </div>
+            <div className="w-full flex flex-col items-start justify-center">
+                <p className="text-[0.29rem] md:text-base text-gray-500 dark:text-gray-600 font-medium">Lorem ipsum dolor sit.</p>
+                <p className="text-[0.29rem] md:text-base text-gray-500 dark:text-gray-600 font-medium">Lorem ipsum dolor sit amet.</p>
+                <p className="text-[0.29rem] md:text-base text-gray-500 dark:text-gray-600 font-medium">Lorem, ipsum dolor.</p>
+            </div>
+        </div>
     },
     {
         id: 5,
-        content: <CCertificate />,
+        content: <WebDevCertificate />,
         className: "col-span-1",
-        thumbnail: <div className="h-20 lg:h-60 flex justify-evenly items-center  backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-1 lg:border-2 border-[#e0e0e0] dark:border-[#202020] hover:cursor-pointer"><div><Image className="h-full w-12 lg:w-44" src={Cl} /></div></div>
+        thumbnail: <div className="h-20 md:h-60 flex flex-col justify-around items-center  backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-1 md:border-2 border-[#e0e0e0] dark:border-[#202020] cursor-pointer p-2 md:p-0 md:py-5 md:px-8">
+            <div className="flex items-center w-full gap-0.5">
+                <Image className=" h-full w-8 md:w-24" src={dsa} />
+                <h1 className="text-gray-700 dark:text-gray-500 sirin-stencil-regular text-[8px] md:text-4xl font-bold">DSA</h1>
+            </div>
+            <div className="w-full flex flex-col items-start justify-center">
+                <p className="text-[0.29rem] md:text-base text-gray-500 dark:text-gray-600 font-medium">Lorem ipsum dolor sit.</p>
+                <p className="text-[0.29rem] md:text-base text-gray-500 dark:text-gray-600 font-medium">Lorem ipsum dolor sit amet.</p>
+                <p className="text-[0.29rem] md:text-base text-gray-500 dark:text-gray-600 font-medium">Lorem, ipsum dolor.</p>
+            </div>
+        </div>
     },
     {
         id: 6,
         content: <WebDevCertificate />,
-        className: "col-span-3",
-        thumbnail: <div className="h-20 lg:h-60 flex justify-evenly items-center backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-1 lg:border-2 border-[#e0e0e0] dark:border-[#202020] hover:cursor-pointer"><div><Image className="h-full w-16 lg:w-56" src={HTML} /></div><div><Image className="h-full w-16 lg:w-56" src={CSS} /></div><div><Image className="h-full w-16 lg:w-56" src={JS} /></div></div>
+        className: "col-span-2 row-span-2",
+        thumbnail: <div className="h-[180px] md:h-[520px] flex justify-around items-center backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-1 md:border-2 border-[#e0e0e0] dark:border-[#202020] cursor-pointer p-2 md:p-0 md:py-5 md:px-8">
+            <div className="flex flex-col items-start justify-around gap-3 md:gap-5">
+                <div className="text-gray-700 dark:text-gray-500 sirin-stencil-regular font-bold text-lg md:text-5xl text-start w-full">MERN Stack</div>
+                <div className="flex items-center justify-between w-full">
+                    <Image className="h-full w-8 md:w-24" src={mdb} />
+                    <Image className="h-full w-8 md:w-24 hidden dark:block" src={express} />
+                    <Image className="h-full w-8 md:w-24 dark:hidden" src={expressb} />
+                    <Image className="h-full w-8 md:w-24" src={ReactJS} />
+                    <Image className="h-full w-8 md:w-24 p-0.5 md:p-1.5" src={node} />
+                </div>
+                <div className="flex flex-col w-full items-start justify-center">
+                    <p className="text-[0.29rem] md:text-base text-gray-500 dark:text-gray-600 font-normal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi nam officiis libero dignissimos assumenda impedit autem sint consectetur nobis dolor? sit.</p>
+                    <p className="text-[0.29rem] md:text-base text-gray-500 dark:text-gray-600 font-normal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi nam officiis libero dignissimos assumenda impedit autem sint consectetur nobis dolor? sit amet.</p>
+                    <p className="text-[0.29rem] md:text-base text-gray-500 dark:text-gray-600 font-normal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi nam officiis libero dignissimos assumenda impedit autem sint consectetur nobis dolor? .</p>
+                </div>
+            </div>
+        </div>
     },
     {
         id: 7,
         content: <WebDevCertificate />,
-        className: "col-span-1",
-        thumbnail: <div className="h-20 lg:h-60 flex justify-evenly items-center backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-1 lg:border-2 border-[#e0e0e0] dark:border-[#202020] hover:cursor-pointer"><div><Image className="h-full w-16 lg:w-56" src={BS} /></div></div>
+        className: "col-span-2 row-span-1",
+        thumbnail: <div className="h-20 md:h-60 flex flex-wrap justify-around items-center backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-1 md:border-2 border-[#e0e0e0] dark:border-[#202020] cursor-pointer p-2 md:p-0 md:py-5 md:px-8">
+            <div className="flex flex-col items-start justify-around gap-3 md:gap-5 w-full">
+                <div className="text-gray-700 dark:text-gray-500 sirin-stencil-regular text-sm md:text-4xl font-bold w-full">React Frameworks</div>
+                <div className="flex items-center justify-between w-full">
+                    <div className="flex items-center justify-evenly w-1/2">
+                        <Image className="h-full w-8 md:w-24 hidden dark:block" src={NextJS} />
+                        <Image className="h-full w-8 md:w-24 dark:hidden" src={NextJSL} />
+                        <Image className="h-full w-8 md:w-24" src={vite} />
+                    </div>
+                    <div className="flex flex-col justify-around items-end">
+                        <p className="text-[0.29rem] md:text-base text-gray-500 dark:text-gray-600 font-normal">Lorem ipsum dolor sit amet.</p>
+                        <p className="text-[0.29rem] md:text-base text-gray-500 dark:text-gray-600 font-normal">Lorem ipsum dolor sit amet.</p>
+                        <p className="text-[0.29rem] md:text-base text-gray-500 dark:text-gray-600 font-normal">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     },
     {
         id: 8,
         content: <WebDevCertificate />,
-        className: "col-span-2 row-span-2",
-        thumbnail: <div className="h-[180px] lg:h-[520px] flex flex-wrap justify-evenly items-center backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-1 lg:border-2 border-[#e0e0e0] dark:border-[#202020] hover:cursor-pointer"><div><Image className="h-full w-16 lg:w-56 hidden dark:block" src={NextJS} /><Image className="h-full w-16 lg:w-56 dark:hidden" src={NextJSL} /></div><div><Image className="h-full w-16 lg:w-56" src={ReactJS} /></div><div><Image className="h-full w-16 lg:w-56" src={Tcss} /></div><div className="flex items-center justify-center w-16 lg:w-56"><Image className="h-full w-12 lg:w-44" src={FM} /></div></div>
+        className: "col-span-2 row-span-1",
+        thumbnail: <div className="h-20 md:h-60 flex flex-wrap justify-around items-center backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-1 md:border-2 border-[#e0e0e0] dark:border-[#202020] cursor-pointer p-2 md:p-0 md:py-5 md:px-8">
+            <div className="flex flex-col items-start justify-around gap-3 md:gap-5 w-full">
+                <div className="text-gray-700 dark:text-gray-500 sirin-stencil-regular text-sm md:text-4xl font-bold w-full">CSS Frameworks</div>
+                <div className="flex items-center justify-between w-full">
+                    <div className="flex items-center justify-evenly w-1/2">
+                        <Image className="h-full w-8 md:w-24" src={Tcss} />
+                        <Image className="h-full w-8 md:w-24" src={BS} />
+                    </div>
+                    <div className="flex flex-col items-end justify-around">
+                        <p className="text-[0.29rem] md:text-base text-gray-500 dark:text-gray-600 font-normal">Lorem ipsum dolor sit amet.</p>
+                        <p className="text-[0.29rem] md:text-base text-gray-500 dark:text-gray-600 font-normal">Lorem ipsum dolor sit amet.</p>
+                        <p className="text-[0.29rem] md:text-base text-gray-500 dark:text-gray-600 font-normal">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     },
     {
         id: 9,
         content: <WebDevCertificate />,
-        className: "row-span-2 col-span-1",
-        thumbnail: <div className="h-[180px] lg:h-[520px] flex flex-col justify-evenly items-center backdrop-blur-[1.5px] rounded-xl md:rounded-2xl lg:rounded-3xl border-1 lg:border-2 border-[#e0e0e0] dark:border-[#202020] hover:cursor-pointer"><div className="flex items-center justify-center w-12 lg:w-44"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class=" h-full w-full rounded-xl md:rounded-[3rem] lg:rounded-[3rem]"><rect className="fill-black dark:fill-white" width="256" height="256" fill="none"></rect><line className="stroke-[#e0e0e0] dark:stroke-[#202020]" x1="208" y1="128" x2="128" y2="208" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line className="stroke-[#e0e0e0] dark:stroke-[#202020]" x1="192" y1="40" x2="40" y2="192" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg></div><div className="flex items-center justify-center w-12 lg:w-44"><svg class="data-[auto=true]:sm:hidden block text-foreground  h-full w-full" fill="currentColor" viewBox="0 0 43 43" ><path d="M32 43H11a10.928 10.928 0 01-7.778-3.222A10.928 10.928 0 010 32V11a10.928 10.928 0 013.222-7.778A10.928 10.928 0 0111 0h21a10.929 10.929 0 017.779 3.222A10.927 10.927 0 0143 11v21a10.927 10.927 0 01-3.222 7.778A10.929 10.929 0 0132 43zM11.314 12.293v12.033a6.35 6.35 0 00.87 3.31 6.243 6.243 0 002.422 2.3 7.458 7.458 0 003.595.843 7.474 7.474 0 003.6-.839 6.2 6.2 0 002.418-2.3 6.381 6.381 0 00.869-3.315V12.292h-1.659V24.21a5.149 5.149 0 01-.643 2.578 4.6 4.6 0 01-1.824 1.779 5.668 5.668 0 01-2.759.648 5.646 5.646 0 01-2.756-.648 4.64 4.64 0 01-1.823-1.779 5.116 5.116 0 01-.648-2.578V12.292zm18.6 0v18.175h1.66V12.293z"></path></svg></div></div>
+        className: "col-span-1",
+        thumbnail: <div className="h-20 md:h-60 flex flex-col justify-around items-center  backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-1 md:border-2 border-[#e0e0e0] dark:border-[#202020] cursor-pointer p-2 md:p-0 md:py-5 md:px-8">
+            <div className="flex items-center w-full gap-0.5">
+                <Image className=" h-full w-8 md:w-24 px-1 md:px-2" src={appwrite} />
+                <h1 className="text-gray-700 dark:text-gray-500 sirin-stencil-regular text-[8px] md:text-4xl font-bold">Appwrite</h1>
+            </div>
+            <div className="w-full flex flex-col items-start justify-center">
+                <p className="text-[0.29rem] md:text-base text-gray-500 dark:text-gray-600 font-medium">Lorem ipsum dolor sit.</p>
+                <p className="text-[0.29rem] md:text-base text-gray-500 dark:text-gray-600 font-medium">Lorem ipsum dolor sit amet.</p>
+                <p className="text-[0.29rem] md:text-base text-gray-500 dark:text-gray-600 font-medium">Lorem, ipsum dolor.</p>
+            </div>
+        </div>
     },
     {
         id: 10,
         content: <WebDevCertificate />,
-        className: "row-span-2 col-span-1",
-        thumbnail: <div className="h-[180px] lg:h-[520px] flex flex-col justify-evenly items-center backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-1 lg:border-2 border-[#e0e0e0] dark:border-[#202020] hover:cursor-pointer"><div><Image className="h-full w-12 lg:w-44 hidden dark:block" src={AuiD} /><Image className="h-full w-12 lg:w-44 dark:hidden" src={Aui} /></div><div><Image className="h-full w-12 lg:w-44 hidden dark:block" src={Chart} /><Image className="h-full w-12 lg:w-44 dark:hidden" src={ChartL} /></div></div>
+        className: "col-span-2 row-span-2",
+        thumbnail: <div className="h-20 md:h-60 flex flex-wrap justify-around items-center backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-1 md:border-2 border-[#e0e0e0] dark:border-[#202020] cursor-pointer p-2 md:p-0 md:py-5 md:px-8">
+            <div className="flex flex-col items-start justify-around gap-3 md:gap-5 w-full">
+                <div className="text-gray-700 dark:text-gray-500 sirin-stencil-regular text-sm md:text-4xl font-bold w-full">Web Animations</div>
+                <div className="flex items-center justify-between w-full">
+                    <div className="flex items-center justify-evenly w-1/2">
+                        <Image className="h-full w-8 md:w-24" src={FM} />
+                        <Image className="h-full w-8 md:w-24 rounded-full" src={gsap} />
+                    </div>
+                    <div className="flex flex-col items-end justify-around">
+                        <p className="text-[0.29rem] md:text-base text-gray-500 dark:text-gray-600 font-normal">Lorem ipsum dolor sit amet.</p>
+                        <p className="text-[0.29rem] md:text-base text-gray-500 dark:text-gray-600 font-normal">Lorem ipsum dolor sit amet.</p>
+                        <p className="text-[0.29rem] md:text-base text-gray-500 dark:text-gray-600 font-normal">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     },
-    // {
-    //     id: 11,
-    //     content: <WebDevCertificate />,
-    //     className: "col-span-2",
-    //     thumbnail: <div className="flex gap-5 lg:gap-24 justify-center items-center backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-1 lg:border-2 border-[#e0e0e0] dark:border-[#202020] "><Image className="h-full w-[41%] md:w-[47%] lg:w-[41%]" src={HTML} /><Image className="h-full w-[41%] md:w-[47%] lg:w-[41%]" src={HTML} /></div>
-    // },
-    // {
-    //     id: 12,
-    //     content: <WebDevCertificate />,
-    //     className: "col-span-1",
-    //     thumbnail: <div className="backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-1 lg:border-2 border-[#e0e0e0] dark:border-[#202020]"><Image className="h-full w-full" src={HTML} /></div>
-    // },
-    // {
-    //     id: 13,
-    //     content: <WebDevCertificate />,
-    //     className: "col-span-1",
-    //     thumbnail: <div className="backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-1 lg:border-2 border-[#e0e0e0] dark:border-[#202020]"><Image className="h-full w-full" src={HTML} /></div>
-    // },
-    
+    {
+        id: 11,
+        content: <WebDevCertificate />,
+        className: "col-span-1",
+        thumbnail: <div className="h-20 md:h-60 flex flex-col justify-around items-center  backdrop-blur-[1.5px] rounded-xl lg:rounded-3xl border-1 md:border-2 border-[#e0e0e0] dark:border-[#202020] cursor-pointer p-2 md:p-0 md:py-5 md:px-8">
+            <div className="flex items-center w-full gap-0.5">
+                <Image className=" h-full w-8 md:w-24 hidden dark:block" src={Chart} />
+                <Image className=" h-full w-8 md:w-24 dark:hidden" src={ChartL} />
+                <h1 className="text-gray-700 dark:text-gray-500 sirin-stencil-regular text-[8px] md:text-4xl font-bold">Chart.js</h1>
+            </div>
+            <div className="w-full flex flex-col items-start justify-center">
+                <p className="text-[0.29rem] md:text-base text-gray-500 dark:text-gray-600 font-medium">Lorem ipsum dolor sit.</p>
+                <p className="text-[0.29rem] md:text-base text-gray-500 dark:text-gray-600 font-medium">Lorem ipsum dolor sit amet.</p>
+                <p className="text-[0.29rem] md:text-base text-gray-500 dark:text-gray-600 font-medium">Lorem, ipsum dolor.</p>
+            </div>
+        </div>
+    },
 ];
 
 
