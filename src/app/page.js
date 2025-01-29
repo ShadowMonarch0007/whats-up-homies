@@ -5,10 +5,10 @@ import HomePage from "@/components/Home/home";
 export default function Home() {
   return (
     <div>
-      <div className=" lg:hidden md:hidden xl:hidden 2xl:hidden">
+      <div className="md:hidden">
         <Hambar />
       </div>
-      <div className="p-5 lg:p-10">
+      <div className="p-5 md:p-10">
         <HomePage/>
       </div>
     </div>

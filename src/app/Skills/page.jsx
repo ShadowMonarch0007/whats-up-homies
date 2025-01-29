@@ -4,7 +4,7 @@ import Skills from "@/components/Skills/skills";
 export default async function Skill(){
     return(
         <div>
-            <div className=" lg:hidden md:hidden xl:hidden 2xl:hidden">
+            <div className="md:hidden">
                 <Hambar />
             </div>
             <div className="p-5 lg:p-10">
