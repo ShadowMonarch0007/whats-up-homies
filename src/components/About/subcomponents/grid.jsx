@@ -10,7 +10,7 @@ import Anime from "@/components/About/img/anime.gif"
 
 export default function BentoGridDemo() {
   return (
-    <BentoGrid className="w-[86%] lg:w-full md:w-full xl:w-full 2xl:w-full mx-auto">
+    <BentoGrid className="w-[86%] md:w-full mx-auto">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}

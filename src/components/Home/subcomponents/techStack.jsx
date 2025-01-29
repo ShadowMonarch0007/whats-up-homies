@@ -2,6 +2,7 @@ import React from "react";
 import MagicButton from "@/components/ui/border-button";
 import { FaLocationArrow } from "react-icons/fa6";
 import Link from "next/link";
+import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 
 export default async function TechStack(){
 
@@ -18,20 +19,8 @@ export default async function TechStack(){
                         </div>
                         <Link href="./Skills" className="absolute bottom-0 left-0 group-hover:-translate-x-5 transition-all"><MagicButton title={"View All"} icon={<FaLocationArrow/>} position={"right"}/></Link>
                         <div class="flex gap-3 lg:gap-5 w-full h-full items-center justify-end absolute -right-5 -z-50">
-                            <div class="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                                <span class="h-9 w-20 lg:h-16 lg:w-40 text-[8px] lg:text-base rounded-lg flex items-center justify-center bg-[#e0e0e0] dark:bg-[#202020] text-[#202020] dark:text-[#e0e0e0]">C</span>
-                                <span class="h-9 w-20 lg:h-16 lg:w-40 text-[8px] lg:text-base rounded-lg flex items-center justify-center bg-[#e0e0e0] dark:bg-[#202020] text-[#202020] dark:text-[#e0e0e0]">C++</span>
-                                <span class="h-9 w-20 lg:h-16 lg:w-40 text-[8px] lg:text-base rounded-lg flex items-center justify-center bg-[#e0e0e0] dark:bg-[#202020] text-[#202020] dark:text-[#e0e0e0]">Java</span>
-                                <span class="h-9 w-20 lg:h-16 lg:w-40 text-[8px] lg:text-base rounded-lg flex items-center justify-center bg-[#e0e0e0] dark:bg-[#202020] text-[#202020] dark:text-[#e0e0e0]">DSA</span>
-                                <span class="h-9 w-20 lg:h-16 lg:w-40 text-[8px] lg:text-base rounded-lg flex items-center justify-center bg-[#e0e0e0] dark:bg-[#202020] text-[#202020] dark:text-[#e0e0e0]">Web Dev</span>
-                            </div>
-                            <div class="flex flex-col gap-3 md:gap-3 lg:gap-8 mt-12 lg:mt-24">
-                                <span class="h-9 w-20 lg:h-16 lg:w-40 text-[8px] lg:text-base rounded-lg flex items-center justify-center bg-[#e0e0e0] dark:bg-[#202020] text-[#202020] dark:text-[#e0e0e0]">MERN Stack</span>
-                                <span class="h-9 w-20 lg:h-16 lg:w-40 text-[8px] lg:text-base rounded-lg flex items-center justify-center bg-[#e0e0e0] dark:bg-[#202020] text-[#202020] dark:text-[#e0e0e0]">NextJS</span>
-                                <span class="h-9 w-20 lg:h-16 lg:w-40 text-[8px] lg:text-base rounded-lg flex items-center justify-center bg-[#e0e0e0] dark:bg-[#202020] text-[#202020] dark:text-[#e0e0e0]">Typescript</span>
-                                <span class="h-9 w-20 lg:h-16 lg:w-40 text-[8px] lg:text-base rounded-lg flex items-center justify-center bg-[#e0e0e0] dark:bg-[#202020] text-[#202020] dark:text-[#e0e0e0]">Motion Dev</span>
-                                <span class="h-9 w-20 lg:h-16 lg:w-40 text-[8px] lg:text-base rounded-lg flex items-center justify-center bg-[#e0e0e0] dark:bg-[#202020] text-[#202020] dark:text-[#e0e0e0]">Javascript</span>
-                            </div>
+                            <InfiniteMovingCards items={techStack1} speed="normal" direction="up" />
+                            <InfiniteMovingCards items={techStack2} speed="slow" direction="down" />
                         </div>
                     </div>
                 </div>
