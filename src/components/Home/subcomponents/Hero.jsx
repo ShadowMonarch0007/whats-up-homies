@@ -20,23 +20,15 @@ export default async function Hero() {
             <div className="flex items-center justify-center">
                 <TextGenerateEffect
                     words="Greetings! I&apos;m Aditya Chandra, a software developer"
-                    className="lg:w-2/3 md:w-2/3 text-center text-3xl md:text-5xl lg:text-6xl"
+                    className="lg:w-2/3 md:w-2/3 text-center text-[1.4rem] md:text-[4rem]"
                 />
             </div>
-            <div className="text-base md:xl lg:text-3xl text-center font-normal text-neutral-600 dark:text-neutral-400">
+            <div className="text-[8px] md:text-2xl text-center font-normal text-neutral-600 dark:text-neutral-400">
                 I&apos;m
                 <FlipWords words={words} />
                 dedicated to delivering exemplary work.
             </div>
-            <div className="flex flex-col items-center justify-center my-5 lg:my-7">
-                <div className="lg:w-1/2 ">
-                    <p className="uppercase tracking-widest text-[6px] lg:text-sm text-center text-red-300">
-                        &quot;Design is not just what it looks like and feels like. Design is how it works.&quot;
-                    </p>
-                    <p className="uppercase tracking-widest text-[8px] lg:text-xs text-end text-red-300">-Steve Jobs</p>
-                </div>
-            </div>
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center my-4 md:my-8">
                 <Link href="https://www.linkedin.com/in/aditya-chandra-b89470285"><MagicButton title={"Know Me More"} icon={<FaLocationArrow />} position={"right"} /></Link>
             </div>
         </div>
