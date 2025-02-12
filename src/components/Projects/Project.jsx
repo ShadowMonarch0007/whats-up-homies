@@ -25,13 +25,18 @@ import Gsap from "@/components/Projects/img/gsap.png"
 import EJS from "@/components/Projects/img/express.png"
 import appwrite from "@/components/Projects/img/appwrite.png"
 import ts from "@/components/Projects/img/typescript.png"
+import cloudinary from "@/components/Projects/img/cloudinary-icon.png"
+import picassox from "@/components/Projects/img/picassox.png"
+import luxeloom from "@/components/Projects/img/luxeloom.png"
 
 export default async function Projects(){
     return(
         <div className="flex flex-wrap items-center justify-evenly">
+            <ThreeDCardDemo title={"PicassoX"} note={"An AI-powered image generator with Cloudinary AI and Stripe payments integration."} img={picassox} link={"https://picassox.vercel.app/"} people={PicassoX}/>
+            <ThreeDCardDemo title={"Luxeloom"} note={"LuxeLoom is a premium e-commerce platform with elegant design, seamless shopping, and efficient order management."} img={luxeloom} link={"https://luxeloom-shop.vercel.app/"} people={MERN}/>
             <ThreeDCardDemo title={"GameX"} note={"A game providing website with modern and futuristic animations inspired from Zentry."} img={GameX} link={"https://game-x-pro.vercel.app/"} people={gameX}/>
             <ThreeDCardDemo title={"Cloud Haven"} note={"A cloud storage website to upload your files using appwrite service."} img={CloudHaven} link={"https://cloud-haven-storage.vercel.app/"} people={Cloud_Haven}/>
-            <ThreeDCardDemo title={"JARVIS I"} note={"An image generating website using `OPEN-AI API` and cloudinary."} img={JarvisI} link={"https://jarvis-i.vercel.app/"} people={JARVIS_IMG}/>
+            <ThreeDCardDemo title={"JARVIS I"} note={"An image generating website using `OPEN-AI API` and cloudinary."} img={JarvisI} link={"https://jarvis-i.vercel.app/"} people={MERN}/>
             <ThreeDCardDemo title={"My Portfolio"} note={"My own Portfolio designed to showcase my digital presence."} img={NewPortfolio} link={"https://aditya-chandra-portfolio.vercel.app/"} people={Portfolio}/>
             <ThreeDCardDemo title={"JARVIS Ai"} note={"UI/UX Project designed for an AI based commercial marketing site."} img={Jarvisai} link={"https://the-jarvis-ai.vercel.app/"} people={JARVIS}/>
             <ThreeDCardDemo title={"Campus Xpress"} note={"A service provider website based on college campus for HACKODISHA 3.0 ."} img={campusXpress} link={"https://bhagwan-ke-bharose.github.io/CampusXpress/"} people={Portfolio_Old}/>
@@ -130,7 +135,7 @@ const Portfolio_Old = [
       image: FM,
     },
   ];
-  const JARVIS_IMG = [
+  const MERN = [
     {
       id: 1,
       name: "Mongo DB",
@@ -172,5 +177,27 @@ const Portfolio_Old = [
       id: 4,
       name: "GSAP",
       image: Gsap,
+    },
+  ];
+  const PicassoX = [
+    {
+      id: 1,
+      name: "Next JS",
+      image: NextJS,
+    },
+    {
+      id: 2,
+      name: "Mongo DB",
+      image: MDB,
+    },
+    {
+      id: 3,
+      name: "Cloudinary",
+      image: cloudinary,
+    },
+    {
+      id: 4,
+      name: "Typescript",
+      image: ts,
     },
   ];

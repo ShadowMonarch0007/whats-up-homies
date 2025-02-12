@@ -11,7 +11,7 @@ export function AnimatedPinDemo({ title, name, nlink, description1, description2
         <Link href={nlink}>
           <div className="flex flex-col basis-full justify-between p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-64 h-64 md:w-80 md:h-80">
             <div className="">
-              <Image src={Cover} className="w-full absolute -z-10 top-0 left-0 right-0 scale-125 opacity-50" />
+              <Image src={Cover} className="w-full absolute -z-10 -top-1 left-0 right-0 scale-125 opacity-50" />
               <Image src={Logo} className="rounded-lg w-20 md:w-24 bg-white/60 backdrop-blur-lg translate-y-[50%]" />
             </div>
             <div className="flex flex-col items-center justify-center gap-5 md:gap-0">
