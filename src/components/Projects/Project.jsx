@@ -32,7 +32,7 @@ import luxeloom from "@/components/Projects/img/luxeloom.png"
 export default async function Projects(){
     return(
         <div className="flex flex-wrap items-center justify-evenly">
-            <ThreeDCardDemo title={"PicassoX"} note={"An AI-powered image generator with Cloudinary AI and Stripe payments integration."} img={picassox} link={"https://picassox.vercel.app/"} people={PicassoX}/>
+            <ThreeDCardDemo title={"PicassoX"} note={"An AI-powered image editor with Cloudinary AI and Stripe payments integration."} img={picassox} link={"https://picassox.vercel.app/"} people={PicassoX}/>
             <ThreeDCardDemo title={"Luxeloom"} note={"LuxeLoom is a premium e-commerce platform with elegant design, seamless shopping, and efficient order management."} img={luxeloom} link={"https://luxeloom-shop.vercel.app/"} people={MERN}/>
             <ThreeDCardDemo title={"GameX"} note={"A game providing website with modern and futuristic animations inspired from Zentry."} img={GameX} link={"https://game-x-pro.vercel.app/"} people={gameX}/>
             <ThreeDCardDemo title={"Cloud Haven"} note={"A cloud storage website to upload your files using appwrite service."} img={CloudHaven} link={"https://cloud-haven-storage.vercel.app/"} people={Cloud_Haven}/>
